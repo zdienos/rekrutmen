@@ -364,348 +364,7 @@
 						<a href="#"><div class="pull-left"><i class="zmdi zmdi-power mr-20"></i>
 						<span class="right-nav-text">LogOut</span></div><div class="clearfix"></div></a>
 					</li>
-					
-					<!-- <li>
-						<a href="javascript:void(0);" data-toggle="collapse" data-target="#ecom_dr"><div class="pull-left"><i class="zmdi zmdi-shopping-basket mr-20"></i><span class="right-nav-text">E-Commerce</span></div><div class="pull-right"><span class="label label-success">hot</span></div><div class="clearfix"></div></a>
-						<ul id="ecom_dr" class="collapse collapse-level-1">
-							<li>
-								<a href="e-commerce.html">Dashboard</a>
-							</li>
-							<li>
-								<a href="product.html">Products</a>
-							</li>
-							<li>
-								<a href="product-detail.html">Product Detail</a>
-							</li>
-							<li>
-								<a href="add-products.html">Add Product</a>
-							</li>
-							<li>
-								<a href="product-orders.html">Orders</a>
-							</li>
-							<li>
-								<a href="product-cart.html">Cart</a>
-							</li>
-							<li>
-								<a href="product-checkout.html">Checkout</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="javascript:void(0);" data-toggle="collapse" data-target="#app_dr"><div class="pull-left"><i class="zmdi zmdi-apps mr-20"></i><span class="right-nav-text">Apps </span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-						<ul id="app_dr" class="collapse collapse-level-1">
-							<li>
-								<a href="chats.html">chats</a>
-							</li>
-							<li>
-								<a href="calendar.html">calendar</a>
-							</li>
-							<li>
-								<a href="weather.html">weather</a>
-							</li>
-							<li>
-								<a href="javascript:void(0);" data-toggle="collapse" data-target="#email_dr">Email<div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-								<ul id="email_dr" class="collapse collapse-level-2">
-									<li>
-										<a href="inbox.html">inbox</a>
-									</li>
-									<li>
-										<a href="inbox-detail.html">detail email</a>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<a href="javascript:void(0);" data-toggle="collapse" data-target="#contact_dr">Contacts<div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-								<ul id="contact_dr" class="collapse collapse-level-2">
-									<li>
-										<a href="contact-list.html">list</a>
-									</li>
-									<li>
-										<a href="contact-card.html">cards</a>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<a href="file-manager.html">File Manager</a>
-							</li>
-							<li>
-								<a href="todo-tasklist.html">To Do/Tasklist</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="widgets.html"><div class="pull-left"><i class="zmdi zmdi-flag mr-20"></i><span class="right-nav-text">widgets</span></div><div class="pull-right"><span class="label label-warning">8</span></div><div class="clearfix"></div></a>
-					</li> -->
-					<!-- <li><hr class="light-grey-hr mb-10"/></li>
-					<li class="navigation-header">
-						<span>component</span> 
-						<i class="zmdi zmdi-more"></i>
-					</li>
-					<li>
-						<a href="javascript:void(0);" data-toggle="collapse" data-target="#ui_dr"><div class="pull-left"><i class="zmdi zmdi-smartphone-setup mr-20"></i><span class="right-nav-text">UI Elements</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-						<ul id="ui_dr" class="collapse collapse-level-1 two-col-list">
-							<li>
-								<a href="panels-wells.html">Panels & Wells</a>
-							</li>
-							<li>
-								<a href="modals.html">Modals</a>
-							</li>
-							<li>
-								<a href="sweetalert.html">Sweet Alerts</a>
-							</li>
-							<li>
-								<a href="notifications.html">notifications</a>
-							</li>
-							<li>
-								<a href="typography.html">Typography</a>
-							</li>
-							<li>
-								<a href="buttons.html">Buttons</a>
-							</li>
-							<li>
-								<a href="accordion-toggle.html">Accordion / Toggles</a>
-							</li>
-							<li>
-								<a href="tabs.html">Tabs</a>
-							</li>
-							<li>
-								<a href="progressbars.html">Progress bars</a>
-							</li>
-							<li>
-								<a href="skills-counter.html">Skills & Counters</a>
-							</li>
-							<li>
-								<a href="pricing.html">Pricing Tables</a>
-							</li>
-							<li>
-								<a href="nestable.html">Nestables</a>
-							</li>
-							<li>
-								<a href="dorpdown.html">Dropdowns</a>
-							</li>
-							<li>
-								<a href="bootstrap-treeview.html">Tree View</a>
-							</li>
-							<li>
-								<a href="carousel.html">Carousel</a>
-							</li>
-							<li>
-								<a href="range-slider.html">Range Slider</a>
-							</li>
-							<li>
-								<a href="grid-styles.html">Grid</a>
-							</li>
-							<li>
-								<a href="bootstrap-ui.html">Bootstrap UI</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a class="active" href="javascript:void(0);" data-toggle="collapse" data-target="#form_dr"><div class="pull-left"><i class="zmdi zmdi-edit mr-20"></i><span class="right-nav-text">Forms</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-						<ul id="form_dr" class="collapse collapse-level-1 two-col-list">
-							<li>
-								<a href="form-element.html">Basic Forms</a>
-							</li>
-							<li>
-								<a class="active-page" href="form-layout.html">form Layout</a>
-							</li>
-							<li>
-								<a href="form-advanced.html">Form Advanced</a>
-							</li>
-							<li>
-								<a href="form-mask.html">Form Mask</a>
-							</li>
-							<li>
-								<a href="form-picker.html">Form Picker</a>
-							</li>
-							<li>
-								<a href="form-validation.html">form Validation</a>
-							</li>
-							<li>
-								<a href="form-wizard.html">Form Wizard</a>
-							</li>
-							<li>
-								<a href="form-x-editable.html">X-Editable</a>
-							</li>
-							<li>
-								<a href="cropperjs.html">Cropperjs</a>
-							</li>
-							<li>
-								<a href="form-file-upload.html">File Upload</a>
-							</li>
-							<li>
-								<a href="dropzone.html">Dropzone</a>
-							</li>
-							<li>
-								<a href="bootstrap-wysihtml5.html">Bootstrap Wysihtml5</a>
-							</li>
-							<li>
-								<a href="tinymce-wysihtml5.html">Tinymce Wysihtml5</a>
-							</li>
-							<li>
-								<a href="summernote-wysihtml5.html">summernote</a>
-							</li>
-							<li>
-								<a href="typeahead-js.html">typeahead</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="javascript:void(0);" data-toggle="collapse" data-target="#chart_dr"><div class="pull-left"><i class="zmdi zmdi-chart-donut mr-20"></i><span class="right-nav-text">Charts </span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-						<ul id="chart_dr" class="collapse collapse-level-1 two-col-list">
-							<li>
-								<a href="flot-chart.html">Flot Chart</a>
-							</li>
-							<li>
-								<a href="morris-chart.html">Morris Chart</a>
-							</li>
-							<li>
-								<a href="chart.js.html">chartjs</a>
-							</li>
-							<li>
-								<a href="chartist.html">chartist</a>
-							</li>
-							<li>
-								<a href="easy-pie-chart.html">Easy Pie Chart</a>
-							</li>
-							<li>
-								<a href="sparkline.html">Sparkline</a>
-							</li>
-							<li>
-								<a href="peity-chart.html">Peity Chart</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="javascript:void(0);" data-toggle="collapse" data-target="#table_dr"><div class="pull-left"><i class="zmdi zmdi-format-size mr-20"></i><span class="right-nav-text">Tables</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-						<ul id="table_dr" class="collapse collapse-level-1 two-col-list">
-							<li>
-								<a href="basic-table.html">Basic Table</a>
-							</li>
-							<li>
-								<a href="bootstrap-table.html">Bootstrap Table</a>
-							</li>
-							<li>
-								<a href="data-table.html">Data Table</a>
-							</li>
-							<li>
-								<a  href="export-table.html"><span class="pull-right"><span class="label label-danger">New</span></span>Export Table</a>
-							</li>
-							<li>
-								<a  href="responsive-data-table.html"><span class="pull-right"><span class="label label-danger">New</span></span>RSPV DataTable</a>
-							</li>
-							<li>
-								<a href="responsive-table.html">Responsive Table</a>
-							</li>
-							<li>
-								<a href="editable-table.html">Editable Table</a>
-							</li>
-							<li>
-								<a href="foo-table.html">Foo Table</a>
-							</li>
-							<li>
-								<a href="jsgrid-table.html">Jsgrid Table</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="javascript:void(0);" data-toggle="collapse" data-target="#icon_dr"><div class="pull-left"><i class="zmdi zmdi-iridescent mr-20"></i><span class="right-nav-text">Icons</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-						<ul id="icon_dr" class="collapse collapse-level-1">
-							<li>
-								<a href="fontawesome.html">Fontawesome</a>
-							</li>
-							<li>
-								<a href="themify.html">Themify</a>
-							</li>
-							<li>
-								<a href="linea-icon.html">Linea</a>
-							</li>
-							<li>
-								<a href="simple-line-icons.html">Simple Line</a>
-							</li>
-							<li>
-								<a href="pe-icon-7.html">Pe-icon-7</a>
-							</li>
-							<li>
-								<a href="glyphicons.html">Glyphicons</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="javascript:void(0);" data-toggle="collapse" data-target="#maps_dr"><div class="pull-left"><i class="zmdi zmdi-map mr-20"></i><span class="right-nav-text">maps</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-						<ul id="maps_dr" class="collapse collapse-level-1">
-							<li>
-								<a href="vector-map.html">Vector Map</a>
-							</li>
-							<li>
-								<a href="google-map.html">Google Map</a>
-							</li>
-						</ul>
-					</li> -->
-					<li><hr class="light-grey-hr mb-10"/></li>
-					<!-- <li class="navigation-header">
-						<span>featured</span> 
-						<i class="zmdi zmdi-more"></i>
-					</li>
-					<li>
-						<a href="javascript:void(0);" data-toggle="collapse" data-target="#pages_dr"><div class="pull-left"><i class="zmdi zmdi-google-pages mr-20"></i><span class="right-nav-text">Special Pages</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-						<ul id="pages_dr" class="collapse collapse-level-1 two-col-list">
-							<li>
-								<a href="blank.html">Blank Page</a>
-							</li>
-							<li>
-								<a href="javascript:void(0);" data-toggle="collapse" data-target="#auth_dr">Authantication pages<div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-								<ul id="auth_dr" class="collapse collapse-level-2">
-									<li>
-										<a href="login.html">Login</a>
-									</li>
-									<li>
-										<a href="signup.html">Register</a>
-									</li>
-									<li>
-										<a href="forgot-password.html">Recover Password</a>
-									</li>
-									<li>
-										<a href="reset-password.html">reset Password</a>
-									</li>
-									<li>
-										<a href="locked.html">Lock Screen</a>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<a href="javascript:void(0);" data-toggle="collapse" data-target="#invoice_dr">Invoice<div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-								<ul id="invoice_dr" class="collapse collapse-level-2">
-									<li>
-										<a href="invoice.html">Invoice</a>
-									</li>
-									<li>
-										<a href="invoice-archive.html">Invoice Archive</a>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<a href="javascript:void(0);" data-toggle="collapse" data-target="#error_dr">error pages<div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-								<ul id="error_dr" class="collapse collapse-level-2">
-									<li>
-										<a href="404.html">Error 404</a>
-									</li>
-									<li>
-										<a href="500.html">Error 500</a>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<a href="gallery.html">Gallery</a>
-							</li>
-							<li>
-								<a href="timeline.html">Timeline</a>
-							</li>
-							<li>
-								<a href="faq.html">FAQ</a>
-							</li>
-						</ul>
-					</li> -->
+										
 					
 					
 				</ul>
@@ -1142,15 +801,14 @@
 					<!-- Title -->
 					<div class="row heading-bg">
 						<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-							<h5 class="txt-dark">form layout</h5>
+							<h5 class="txt-dark">Data Pelamar</h5>
 						</div>
 					
 						<!-- Breadcrumb -->
 						<div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
 							<ol class="breadcrumb">
-								<li><a href="index.html">Dashboard</a></li>
-								<li><a href="#"><span>form</span></a></li>
-								<li class="active"><span>form-layout</span></li>
+								<li><a href="index.html">Data Pelamar</a></li>							
+								<li class="active"><span>Bio Data</span></li>
 							</ol>
 						</div>
 						<!-- /Breadcrumb -->
@@ -1158,850 +816,180 @@
 					</div>
 					<!-- /Title -->
 					
-					<!-- Row -->
 					<div class="row">
-						<div class="col-md-6">
+					<div class="col-sm-12">
 							<div class="panel panel-default card-view">
 								<div class="panel-heading">
 									<div class="pull-left">
-										<h6 class="panel-title txt-dark">Form with icon</h6>
+										<h6 class="panel-title txt-dark">Biodata</h6>
 									</div>
 									<div class="clearfix"></div>
 								</div>
 								<div class="panel-wrapper collapse in">
 									<div class="panel-body">
-										<div class="row">
-											<div class="col-sm-12 col-xs-12">
-												<div class="form-wrap">
-													<form>
-														<div class="form-group">
-															<label class="control-label mb-10" for="exampleInputuname_1">User Name</label>
-															<div class="input-group">
-																<div class="input-group-addon"><i class="icon-user"></i></div>
-																<input type="text" class="form-control" id="exampleInputuname_1" placeholder="Username">
-															</div>
-														</div>
-														<div class="form-group">
-															<label class="control-label mb-10" for="exampleInputEmail_1">Email address</label>
-															<div class="input-group">
-																<div class="input-group-addon"><i class="icon-envelope-open"></i></div>
-																<input type="email" class="form-control" id="exampleInputEmail_1" placeholder="Enter email">
-															</div>
-														</div>
-														<div class="form-group">
-															<label class="control-label mb-10" for="exampleInputpwd_1">Password</label>
-															<div class="input-group">
-																<div class="input-group-addon"><i class="icon-lock"></i></div>
-																<input type="password" class="form-control" id="exampleInputpwd_1" placeholder="Enter email">
-															</div>
-														</div>
-														<div class="form-group">
-															<label class="control-label mb-10" for="exampleInputpwd_2">Confirm Password</label>
-															<div class="input-group">
-																<div class="input-group-addon"><i class="icon-lock"></i></div>
-																<input type="password" class="form-control" id="exampleInputpwd_2" placeholder="Enter email">
-															</div>
-														</div>
-														<div class="form-group">
-															<label class="control-label mb-10">Gender</label>
-															<div>
-																<div class="radio">
-																	<input type="radio" name="radio1" id="radio_1" value="option1" checked="">
-																	<label for="radio_1">
-																	M
-																	</label>
-																</div>
-																<div class="radio">
-																	<input type="radio" name="radio1" id="radio_2" value="option2" checked="">
-																	<label for="radio_2">
-																	F
-																	</label>
-																</div>
-															</div>
-														</div>
-														<div class="form-group">
-															<div class="checkbox checkbox-success">
-																<input id="checkbox_1" type="checkbox">
-																<label for="checkbox_1"> Remember me </label>
-															</div>
-														</div>
-														<button type="submit" class="btn btn-success mr-10">Submit</button>
-														<button type="submit" class="btn btn-default">Cancel</button>
-													</form>
+										<div class="form-wrap">
+											<form class="form-horizontal">
+											<div class="form-group">
+												<label class="control-label mb-8 col-sm-2">Nama Lengkap</label>
+												<div class="col-sm-10">
+													<input type="text" class="form-control"  placeholder="Nama Lengkap">
+												</div>
+											</div>											
+											<div class="form-group">
+												<label class="control-label mb-8 col-sm-2">Tempat Tgl Lahir</label>
+												<div class="col-sm-4">
+													<input type="text" class="form-control"  placeholder="">
+												</div>												
+												<div class="col-sm-6">
+													<input type="text" class="form-control"  placeholder="">
 												</div>
 											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="panel panel-default card-view">
-								<div class="panel-heading">
-									<div class="pull-left">
-										<h6 class="panel-title txt-dark">form with right icon</h6>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-								<div class="panel-wrapper collapse in">
-									<div class="panel-body">
-										<div class="row">
-											<div class="col-sm-12 col-xs-12">
-												<div class="form-wrap">
-													<form>
-														<div class="form-group">
-															<label class="control-label mb-10" for="exampleInputuname_2">User Name</label>
-															<div class="input-group">
-																<input type="text" class="form-control" id="exampleInputuname_2" placeholder="Username">
-																<div class="input-group-addon"><i class="icon-user"></i></div>
-															</div>
-														</div>
-														<div class="form-group">
-															<label class="control-label mb-10" for="exampleInputEmail_2">Email address</label>
-															<div class="input-group">
-																<input type="email" class="form-control" id="exampleInputEmail_2" placeholder="Enter email">
-																<div class="input-group-addon"><i class="icon-envelope-open"></i></div>
-															</div>
-														</div>
-														<div class="form-group">
-															<label class="control-label mb-10" for="exampleInputpwd_3">Password</label>
-															<div class="input-group">
-																<input type="password" class="form-control" id="exampleInputpwd_3" placeholder="Enter pwd">
-																<div class="input-group-addon"><i class="icon-lock"></i></div>
-															</div>
-														</div>
-														<div class="form-group">
-															<label class="control-label mb-10" for="exampleInputpwd_42">Confirm Password</label>
-															<div class="input-group">
-																<input type="password" class="form-control" id="exampleInputpwd_42" placeholder="Enter pwd">
-																<div class="input-group-addon"><i class="icon-lock"></i></div>
-															</div>
-														</div>
-														<div class="form-group">
-															<label class="control-label mb-10">Gender</label>
-															<div>
-																<div class="radio">
-																	<input type="radio" name="radio2" id="radio_3" value="option1" checked="">
-																	<label for="radio_3">
-																	M
-																	</label>
-																</div>
-																<div class="radio">
-																	<input type="radio" name="radio2" id="radio_4" value="option2" checked="">
-																	<label for="radio_4">
-																	F
-																	</label>
-																</div>
-															</div>
-														</div>
-														<div class="form-group">
-															<div class="checkbox checkbox-success">
-																<input id="checkbox_2" type="checkbox">
-																<label for="checkbox_2"> Remember me </label>
-															</div>
-														</div>
-														<div class="form-group mb-0">
-															<button type="submit" class="btn btn-success  mr-10">Submit</button>
-															<button type="submit" class="btn btn-default  ">Cancel</button>
-														</div>
-													</form>
+											<div class="form-group">
+												<label class="control-label mb-8 col-sm-2">No KTP</label>
+												<div class="col-sm-10">
+													<input type="text" class="form-control"  placeholder="">
 												</div>
-											</div>	
+											</div>
+											<div class="form-group">
+												<label class="control-label mb-8 col-sm-2">Alamat</label>
+												<div class="col-sm-10">
+													<input type="text" class="form-control"  placeholder="">
+												</div>
+											</div>
+												<!-- <div class="form-group">
+													<label class="control-label mb-10 col-sm-2" for="email_hr">Email:</label>
+													<div class="col-sm-10">
+														<input type="email" class="form-control" id="email_hr" placeholder="Enter email">
+													</div>
+												</div> -->
+												<!-- <div class="form-group">
+													<label class="control-label mb-10 col-sm-2" for="pwd_hr">Password:</label>
+													<div class="col-sm-10"> 
+														<input type="password" class="form-control" id="pwd_hr" placeholder="Enter password">
+													</div>
+												</div> -->
+												<!-- <div class="form-group"> 
+													<div class="col-sm-offset-2 col-sm-10">
+													<div class="checkbox checkbox-success">
+														<input id="checkbox_hr" type="checkbox">
+														<label for="checkbox_hr">
+															remember me
+														</label>
+													</div>
+													</div>
+												</div> -->
+												<div class="form-group mb-0"> 
+													<div class="col-sm-offset-2 col-sm-10">
+													  <button type="button" class="btn btn-success btn-anim"><i class="icon-rocket"></i><span class="btn-text">submit</span></button>
+													</div>
+												</div>
+												</form>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<!-- /Row -->	
-					
-					<!-- Row -->
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-sm-12">
 							<div class="panel panel-default card-view">
 								<div class="panel-heading">
 									<div class="pull-left">
-										<h6 class="panel-title txt-dark">Horizontal form with icon</h6>
+										<h6 class="panel-title txt-dark">Biodata</h6>
 									</div>
 									<div class="clearfix"></div>
 								</div>
 								<div class="panel-wrapper collapse in">
 									<div class="panel-body">
-										<div class="row">
-											<div class="col-sm-12 col-xs-12">
-												<div class="form-wrap">
-													<form class="form-horizontal">
-														<div class="form-group">
-															<label for="exampleInputuname_3" class="col-sm-3 control-label">Username*</label>
-															<div class="col-sm-9">
-																<div class="input-group">
-																	<div class="input-group-addon"><i class="icon-user"></i></div>
-																	<input type="text" class="form-control" id="exampleInputuname_3" placeholder="Username">
-																</div>
-															</div>
-														</div>
-														<div class="form-group">
-															<label  for="exampleInputEmail_3" class="col-sm-3 control-label">Email*</label>
-															<div class="col-sm-9">
-																<div class="input-group">
-																	<div class="input-group-addon"><i class="icon-envelope-open"></i></div>
-																	<input type="email" class="form-control" id="exampleInputEmail_3" placeholder="Enter email">
-																</div>
-															</div>
-														</div>
-														<div class="form-group">
-															<label for="exampleInputweb_31" class="col-sm-3 control-label">Website</label>
-															<div class="col-sm-9">
-																<div class="input-group">
-																	<div class="input-group-addon"><i class="icon-globe"></i></div>
-																	<input type="text" class="form-control" id="exampleInputweb_31" placeholder="Enter Website Name">
-																</div>
-															</div>
-														</div>
-														<div class="form-group">
-															<label for="exampleInputpwd_32" class="col-sm-3 control-label">Password*</label>
-															<div class="col-sm-9">
-																<div class="input-group">
-																	<div class="input-group-addon"><i class="icon-lock"></i></div>
-																	<input type="password" class="form-control" id="exampleInputpwd_32" placeholder="Enter pwd">
-																</div>
-															</div>
-														</div>
-														<div class="form-group">
-															<label for="exampleInputpwd_4" class="col-sm-3 control-label">Re Password*</label>
-															<div class="col-sm-9">
-																<div class="input-group">
-																	<div class="input-group-addon"><i class="icon-lock"></i></div>
-																	<input type="password" class="form-control" id="exampleInputpwd_4" placeholder="Re Enter pwd">
-																</div>
-															</div>
-														</div>
-														<div class="form-group">
-															<div class="col-sm-offset-3 col-sm-9">
-																<div class="checkbox checkbox-success">
-																	<input id="checkbox_33" type="checkbox">
-																	<label for="checkbox_33">Check me out !</label>
-																</div>
-															</div>
-														</div>
-														<div class="form-group mb-0">
-															<div class="col-sm-offset-3 col-sm-9">
-																<button type="submit" class="btn btn-info ">Sign in</button>
-															</div>
-														</div>
-													</form>
+										<div class="form-wrap">
+											<form>
+												<div class="form-group">
+													<label class="control-label mb-10 text-left">Nama Lengkap</label>
+													<input type="text" class="form-control" value="">
 												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>	
-						</div>
-						
-						<div class="col-md-6">
-							<div class="panel panel-default card-view">
-								<div class="panel-heading">
-									<div class="pull-left">
-										<h6 class="panel-title txt-dark">horizontal form with right icon</h6>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-								<div class="panel-wrapper collapse in">
-									<div class="panel-body">
-										<div class="row">
-											<div class="col-sm-12 col-xs-12">
-												<div class="form-wrap">
-													<form class="form-horizontal">
-														<div class="form-group">
-															<label for="exampleInputuname_4" class="col-sm-3 control-label">Username*</label>
-															<div class="col-sm-9">
-																<div class="input-group">
-																	<input type="text" class="form-control" id="exampleInputuname_4" placeholder="Username">
-																	<div class="input-group-addon"><i class="icon-user"></i></div>
-																</div>
-															</div>
-														</div>
-														<div class="form-group">
-															<label for="exampleInputEmail_4" class="col-sm-3 control-label">Email*</label>
-															<div class="col-sm-9">
-																<div class="input-group">
-																	<input type="email" class="form-control" id="exampleInputEmail_4" placeholder="Enter email">
-																	<div class="input-group-addon"><i class="icon-envelope-open"></i></div>
-																</div>
-															</div>
-														</div>
-														<div class="form-group">
-															<label for="exampleInputweb_41" class="col-sm-3 control-label">Website</label>
-															<div class="col-sm-9">
-																<div class="input-group">
-																	<input type="text" class="form-control" id="exampleInputweb_41" placeholder="Enter Website Name">
-																	<div class="input-group-addon"><i class="icon-globe"></i></div>
-																</div>
-															</div>
-														</div>
-														<div class="form-group">
-															<label for="exampleInputpwd_5" class="col-sm-3 control-label">Password*</label>
-															<div class="col-sm-9">
-																<div class="input-group">
-																	<input type="password" class="form-control" id="exampleInputpwd_5" placeholder="Enter pwd">
-																	<div class="input-group-addon"><i class="icon-lock"></i></div>
-																</div>
-															</div>
-														</div>
-														<div class="form-group">
-															<label  for="exampleInputpwd_6" class="col-sm-3 control-label">Re Password*</label>
-															<div class="col-sm-9">
-																<div class="input-group">
-																	<input type="password" class="form-control" id="exampleInputpwd_6" placeholder="Re Enter pwd">
-																	<div class="input-group-addon"><i class="icon-lock"></i></div>
-																</div>
-															</div>
-														</div>
-														<div class="form-group">
-															<div class="col-sm-offset-3 col-sm-9">
-																<div class="checkbox checkbox-success">
-																	<input id="checkbox_34" type="checkbox">
-																	<label for="checkbox_34">Check me out !</label>
-																</div>
-															</div>
-														</div>
-														<div class="form-group mb-0">
-															<div class="col-sm-offset-3 col-sm-9">
-																<button type="submit" class="btn btn-info ">Sign in</button>
-															</div>
-														</div>
-													</form>
+												<div class="form-group">
+													<label class="control-label mb-10 text-left" for="example-email">Email <span class="help"> e.g. "example@gmail.com"</span></label>
+													<input type="email" id="example-email" name="example-email" class="form-control" placeholder="Email">
 												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>	
-						</div>
-					</div>
-					<!-- /Row -->
-					
-					<!-- Row -->
-					<div class="row">
-						<div class="col-md-12">
-							<div class="panel panel-default card-view">
-								<div class="panel-heading">
-									<div class="pull-left">
-										<h6 class="panel-title txt-dark">with two columns</h6>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-								<div class="panel-wrapper collapse in">
-									<div class="panel-body">
-										<div class="row">
-											<div class="col-sm-12 col-xs-12">
-												<div class="form-wrap">
-													<form action="#">
-														<div class="form-body">
-															<h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-account mr-10"></i>Person's Info</h6>
-															<hr class="light-grey-hr"/>
-															<div class="row">
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<label class="control-label mb-10">First Name</label>
-																		<input type="text" id="firstName" class="form-control" placeholder="John doe">
-																		<span class="help-block"> This is inline help </span> 
-																	</div>
-																</div>
-																<!--/span-->
-																<div class="col-md-6">
-																	<div class="form-group has-error">
-																		<label class="control-label mb-10">Last Name</label>
-																		<input type="text" id="lastName" class="form-control" placeholder="12n">
-																		<span class="help-block"> This field has error. </span> 
-																	</div>
-																</div>
-																<!--/span-->
-															</div>
-															<!-- /Row -->
-															<div class="row">
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<label class="control-label mb-10">Gender</label>
-																		<select class="form-control">
-																			<option value="">Male</option>
-																			<option value="">Female</option>
-																		</select>
-																		<span class="help-block"> Select your gender </span> 
-																	</div>
-																</div>
-																<!--/span-->
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<label class="control-label mb-10">Date of Birth</label>
-																		<input type="text" class="form-control" placeholder="dd/mm/yyyy">
-																	</div>
-																</div>
-																<!--/span-->
-															</div>
-															<!-- /Row -->
-															<div class="row">
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<label class="control-label mb-10">Category</label>
-																		<select class="form-control" data-placeholder="Choose a Category" tabindex="1">
-																			<option value="Category 1">Category 1</option>
-																			<option value="Category 2">Category 2</option>
-																			<option value="Category 3">Category 5</option>
-																			<option value="Category 4">Category 4</option>
-																		</select>
-																	</div>
-																</div>
-																<!--/span-->
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<label class="control-label mb-10">Membership</label>
-																		<div class="radio-list">
-																			<div class="radio-inline pl-0">
-																				<span class="radio radio-info">
-																					<input type="radio" name="radio5" id="radio_5" value="option1">
-																			<label for="radio_5">Option 1</label>
-																			</span>
-																			</div>
-																			<div class="radio-inline">
-																				<span class="radio radio-info">
-																					<input type="radio" name="radio5" id="radio_6" value="option2">
-																			<label for="radio_6">Option 2 </label>
-																			</span>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-																<!--/span-->
-															</div>
-															<!-- /Row -->
-															
-															<div class="seprator-block"></div>
-															
-															<h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-account-box mr-10"></i>address</h6>
-															<hr class="light-grey-hr"/>
-															<div class="row">
-																<div class="col-md-12 ">
-																	<div class="form-group">
-																		<label class="control-label mb-10">Street</label>
-																		<input type="text" class="form-control">
-																	</div>
-																</div>
-															</div>
-															<div class="row">
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<label class="control-label mb-10">City</label>
-																		<input type="text" class="form-control">
-																	</div>
-																</div>
-																<!--/span-->
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<label class="control-label mb-10">State</label>
-																		<input type="text" class="form-control">
-																	</div>
-																</div>
-																<!--/span-->
-															</div>
-															<!-- /Row -->
-															<div class="row">
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<label class="control-label mb-10">Post Code</label>
-																		<input type="text" class="form-control">
-																	</div>
-																</div>
-																<!--/span-->
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<label class="control-label mb-10">Country</label>
-																		<select class="form-control">
-																			<option>--Select your Country--</option>
-																			<option>India</option>
-																			<option>Sri Lanka</option>
-																			<option>USA</option>
-																		</select>
-																	</div>
-																</div>
-																<!--/span-->
-															</div>
-														</div>
-														<div class="form-actions mt-10">
-															<button type="submit" class="btn btn-success  mr-10"> Save</button>
-															<button type="button" class="btn btn-default">Cancel</button>
-														</div>
-													</form>
+												<div class="form-group">
+													<label class="control-label mb-10 text-left">Password</label>
+													<input type="password" class="form-control" value="password">
 												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>		
-						</div>
-					</div>
-					<!-- /Row -->
-					
-					<!-- Row -->
-					<div class="row">
-						<div class="col-md-12">
-							<div class="panel panel-default card-view">
-								<div class="panel-heading">
-									<div class="pull-left">
-										<h6 class="panel-title txt-dark">with two columns horizontal form</h6>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-								<div class="panel-wrapper collapse in">
-									<div class="panel-body">
-										<div class="row">
-											<div class="col-md-12">
-												<div class="form-wrap">
-													<form action="#" class="form-horizontal">
-														<div class="form-body">
-															<h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-account mr-10"></i>Person's Info</h6>
-															<hr class="light-grey-hr"/>
-															<div class="row">
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<label class="control-label col-md-3">First Name</label>
-																		<div class="col-md-9">
-																			<input type="text" class="form-control" placeholder="John doe">
-																			<span class="help-block"> This is inline help </span> 
-																		</div>
-																	</div>
-																</div>
-																<!--/span-->
-																<div class="col-md-6">
-																	<div class="form-group has-error">
-																		<label class="control-label col-md-3">Last Name</label>
-																		<div class="col-md-9">
-																			<input type="text" class="form-control" placeholder="12n">
-																			<span class="help-block"> This field has error. </span> 
-																		</div>
-																	</div>
-																</div>
-																<!--/span-->
-															</div>
-															<!-- /Row -->
-															<div class="row">
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<label class="control-label col-md-3">Gender</label>
-																		<div class="col-md-9">
-																			<select class="form-control">
-																				<option value="">Male</option>
-																				<option value="">Female</option>
-																			</select>
-																			<span class="help-block"> Select your gender. </span> 
-																		</div>
-																	</div>
-																</div>
-																<!--/span-->
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<label class="control-label col-md-3">Date of Birth</label>
-																		<div class="col-md-9">
-																			<input type="text" class="form-control" placeholder="dd/mm/yyyy">
-																		</div>
-																	</div>
-																</div>
-																<!--/span-->
-															</div>
-															<!-- /Row -->
-															<div class="row">
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<label class="control-label col-md-3">Category</label>
-																		<div class="col-md-9">
-																			<select class="form-control" data-placeholder="Choose a Category" tabindex="1">
-																				<option value="Category 1">Category 1</option>
-																				<option value="Category 2">Category 2</option>
-																				<option value="Category 3">Category 5</option>
-																				<option value="Category 4">Category 4</option>
-																			</select>
-																		</div>
-																	</div>
-																</div>
-																<!--/span-->
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<label class="control-label col-md-3">Membership</label>
-																		<div class="col-md-9">
-																			<div class="radio-list">
-																				<div class="radio-inline pl-0">
-																					<span class="radio radio-info">																					<input type="radio" name="radio7" id="radio_9" value="option1">
-																						<label for="radio_9">Option 1</label>
-																					</span>
-																				</div>
-																				<div class="radio-inline pl-0">
-																					<span class="radio radio-info">																				<input type="radio" name="radio7" id="radio_10" value="option2">
-																						<label for="radio_10">Option 2</label>
-																					</span>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-																<!--/span-->
-															</div>
-															
-															<div class="seprator-block"></div>
-															
-															<h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-account-box mr-10"></i>address</h6>
-															<hr class="light-grey-hr"/>
-															<!-- /Row -->
-															<div class="row">
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<label class="control-label col-md-3">Address 1</label>
-																		<div class="col-md-9">
-																			<input type="text" class="form-control">
-																		</div>
-																	</div>
-																</div>
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<label class="control-label col-md-3">Address 2</label>
-																		<div class="col-md-9">
-																			<input type="text" class="form-control">
-																		</div>
-																	</div>
-																</div>
-															</div>
-															<div class="row">
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<label class="control-label col-md-3">City</label>
-																		<div class="col-md-9">
-																			<input type="text" class="form-control">
-																		</div>
-																	</div>
-																</div>
-																<!--/span-->
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<label class="control-label col-md-3">State</label>
-																		<div class="col-md-9">
-																			<input type="text" class="form-control">
-																		</div>
-																	</div>
-																</div>
-																<!--/span-->
-															</div>
-															<!-- /Row -->
-															<div class="row">
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<label class="control-label col-md-3">Post Code</label>
-																		<div class="col-md-9">
-																			<input type="text" class="form-control">
-																		</div>
-																	</div>
-																</div>
-																<!--/span-->
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<label class="control-label col-md-3">Country</label>
-																		<div class="col-md-9">
-																			<select class="form-control">
-																				<option>Country 1</option>
-																				<option>Country 2</option>
-																			</select>
-																		</div>
-																	</div>
-																</div>
-																<!--/span-->
-															</div>
-															<!-- /Row -->
-														</div>
-														<div class="form-actions mt-10">
-															<div class="row">
-																<div class="col-md-6">
-																	<div class="row">
-																		<div class="col-md-offset-3 col-md-9">
-																			<button type="submit" class="btn btn-success  mr-10">Submit</button>
-																			<button type="button" class="btn btn-default">Cancel</button>
-																		</div>
-																	</div>
-																</div>
-																<div class="col-md-6"> </div>
-															</div>
-														</div>
-													</form>
+												<div class="form-group">
+													<label class="control-label mb-10 text-left">Placeholder</label>
+													<input type="text" class="form-control" placeholder="placeholder">
 												</div>
-											</div>
+												<div class="form-group">
+													<label class="control-label mb-10 text-left">Text area</label>
+													<textarea class="form-control" rows="5"></textarea>
+												</div>
+												<div class="form-group mt-30 mb-30">
+													<label class="control-label mb-10 text-left">select</label>
+													<select class="form-control">
+														<option>1</option>
+														<option>2</option>
+														<option>3</option>
+														<option>4</option>
+														<option>5</option>
+													</select>
+												</div>
+												<div class="form-group mb-30">
+													<label class="control-label mb-10 text-left">Radio</label>
+													<div class="radio radio-info">
+														<input type="radio" name="radio" id="radio1" value="option1" checked="">
+														<label for="radio1">
+															M
+														</label>
+													</div>
+													<div class="radio radio-info">
+														<input type="radio" name="radio" id="radio2" value="option2" checked="">
+														<label for="radio2">
+															F
+														</label>
+													</div>	
+												</div>
+												<div class="form-group mb-30">
+													<label class="control-label mb-10 text-left">Checkbox</label>
+													<div class="checkbox">
+														<input id="checkbox1" type="checkbox">
+														<label for="checkbox1">
+															Default
+														</label>
+													</div>
+													<div class="checkbox checkbox-primary">
+														<input id="checkbox2" type="checkbox" checked="">
+														<label for="checkbox2">
+															Primary
+														</label>
+													</div>
+													<div class="checkbox checkbox-success">
+														<input id="checkbox3" type="checkbox">
+														<label for="checkbox3">
+															Success
+														</label>
+													</div>	
+												</div>
+												<div class="form-group mb-30">
+													<label class="control-label mb-10 text-left">File upload</label>
+													<div class="fileinput fileinput-new input-group" data-provides="fileinput">
+														<div class="form-control" data-trigger="fileinput"> <i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div>
+														<span class="input-group-addon fileupload btn btn-info btn-anim btn-file"><i class="fa fa-upload"></i> <span class="fileinput-new btn-text">Select file</span> <span class="fileinput-exists btn-text">Change</span>
+														<input type="file" name="...">
+														</span> <a href="#" class="input-group-addon btn btn-danger btn-anim fileinput-exists" data-dismiss="fileinput"><i class="fa fa-trash"></i><span class="btn-text"> Remove</span></a> 
+													</div>
+												</div>
+												<div class="form-group mb-0">
+													<label class="control-label mb-10 text-left">Helping text</label>
+													<input type="text" class="form-control" placeholder="Helping text">
+													<span class="help-block mt-10 mb-0"><small>A block of help text that breaks onto a new line and may extend beyond one line.</small></span>
+												</div>
+											</form>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<!-- /Row -->
-					
-					<!-- Row -->
-					<div class="row">
-						<div class="col-md-12">
-							<div class="panel panel-default card-view">
-								<div class="panel-heading">
-									<div class="pull-left">
-										<h6 class="panel-title txt-dark">Read only</h6>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-								<div class="panel-wrapper collapse in">
-									<div class="panel-body">
-										<div class="row">
-											<div class="col-md-12">
-												<div class="form-wrap">
-													<form class="form-horizontal" role="form">
-														<div class="form-body">
-															<h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-account mr-10"></i>Person's Info</h6>
-															<hr class="light-grey-hr"/>
-															<div class="row">
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<label class="control-label col-md-3">First Name:</label>
-																		<div class="col-md-9">
-																			<p class="form-control-static"> John </p>
-																		</div>
-																	</div>
-																</div>
-																<!--/span-->
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<label class="control-label col-md-3">Last Name:</label>
-																		<div class="col-md-9">
-																			<p class="form-control-static"> Doe </p>
-																		</div>
-																	</div>
-																</div>
-																<!--/span-->
-															</div>
-															<!-- /Row -->
-															<div class="row">
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<label class="control-label col-md-3">Gender:</label>
-																		<div class="col-md-9">
-																			<p class="form-control-static"> Male </p>
-																		</div>
-																	</div>
-																</div>
-																<!--/span-->
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<label class="control-label col-md-3">Date of Birth:</label>
-																		<div class="col-md-9">
-																			<p class="form-control-static"> 24/05/1990 </p>
-																		</div>
-																	</div>
-																</div>
-																<!--/span-->
-															</div>
-															<!-- /Row -->
-															<div class="row">
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<label class="control-label col-md-3">Category:</label>
-																		<div class="col-md-9">
-																			<p class="form-control-static"> Category1 </p>
-																		</div>
-																	</div>
-																</div>
-																<!--/span-->
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<label class="control-label col-md-3">Membership:</label>
-																		<div class="col-md-9">
-																			<p class="form-control-static"> Free </p>
-																		</div>
-																	</div>
-																</div>
-																<!--/span-->
-															</div>
-															<!-- /Row -->
-															
-															<div class="seprator-block"></div>
-															
-															<h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-account-box mr-10"></i>address</h6>
-															<hr class="light-grey-hr"/>
-															<div class="row">
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<label class="control-label col-md-3">Address:</label>
-																		<div class="col-md-9">
-																			<p class="form-control-static"> 827 Deerfield Ave. 
-																			Greenwood</p>
-																		</div>
-																	</div>
-																</div>
-															</div>
-															<div class="row">
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<label class="control-label col-md-3">City:</label>
-																		<div class="col-md-9">
-																			<p class="form-control-static"> Los Angeles </p>
-																		</div>
-																	</div>
-																</div>
-																<!--/span-->
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<label class="control-label col-md-3">State:</label>
-																		<div class="col-md-9">
-																			<p class="form-control-static"> California</p>
-																		</div>
-																	</div>
-																</div>
-																<!--/span-->
-															</div>
-															<!-- /Row -->
-															<div class="row">
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<label class="control-label col-md-3">Post Code:</label>
-																		<div class="col-md-9">
-																			<p class="form-control-static"> 457890 </p>
-																		</div>
-																	</div>
-																</div>
-																<!--/span-->
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<label class="control-label col-md-3">Country:</label>
-																		<div class="col-md-9">
-																			<p class="form-control-static"> USA </p>
-																		</div>
-																	</div>
-																</div>
-																<!--/span-->
-															</div>
-														</div>
-														<div class="form-actions mt-10">
-															<div class="row">
-																<div class="col-md-6">
-																	<div class="row">
-																		<div class="col-md-offset-3 col-md-9">
-																			<button type="submit" class="btn btn-info btn-icon left-icon  mr-10"> <i class="zmdi zmdi-edit"></i> <span>Edit</span></button>
-																			<button type="button" class="btn btn-default">Cancel</button>
-																		</div>
-																	</div>
-																</div>
-																<div class="col-md-6"> </div>
-															</div>
-														</div>
-													</form>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- /Row -->
 				
 				</div>
 				
