@@ -4,7 +4,6 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<title>Dashboard Pelamar</title>
-
 		
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="favicon.ico">
@@ -51,7 +50,7 @@
 				</div>
 				<div id="mobile_only_nav" class="mobile-only-nav pull-right">
 					<ul class="nav navbar-right top-nav pull-right">
-						<li>
+						<!-- <li>
 							<a id="open_right_sidebar" href="#"><i class="zmdi zmdi-settings top-nav-icon"></i></a>
 						</li>
 						<li class="dropdown app-drp">
@@ -106,8 +105,8 @@
 									</div>
 								</li>
 							</ul>
-						</li>
-						<li class="dropdown full-width-drp">
+						</li> -->
+						<!-- <li class="dropdown full-width-drp">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="zmdi zmdi-more-vert top-nav-icon"></i></a>
 							<ul class="dropdown-menu mega-menu pa-0" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
 								<li class="product-nicescroll-bar row">
@@ -197,7 +196,7 @@
 									</ul>
 								</li>	
 							</ul>
-						</li>
+						</li> -->
 						<li class="dropdown alert-drp">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="zmdi zmdi-notifications top-nav-icon"></i><span class="top-nav-icon-badge">5</span></a>
 							<ul  class="dropdown-menu alert-dropdown" data-dropdown-in="bounceIn" data-dropdown-out="bounceOut">
@@ -293,7 +292,7 @@
 							</ul>
 						</li>
 						<li class="dropdown auth-drp">
-							<a href="#" class="dropdown-toggle pr-0" data-toggle="dropdown"><img src="dist/img/user1.png" alt="user_auth" class="user-auth-img img-circle"/><span class="user-online-status"></span></a>
+							<a href="#" class="dropdown-toggle pr-0" data-toggle="dropdown"><img src="<?=base_url('assets/img/user1.png')?>" alt="user_auth" class="user-auth-img img-circle"/><span class="user-online-status"></span></a>
 							<ul class="dropdown-menu user-auth-dropdown" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
 								<li>
 									<a href="profile.html"><i class="zmdi zmdi-account"></i><span>Profile</span></a>
@@ -337,27 +336,36 @@
 			<div class="fixed-sidebar-left">
 				<ul class="nav navbar-nav side-nav nicescroll-bar">
 					<li class="navigation-header">
-						<span>Main</span> 
+						<span>DASHBOARD</span> 
 						<i class="zmdi zmdi-more"></i>
 					</li>
-					<li>
-						<a href="javascript:void(0);" data-toggle="collapse" data-target="#dashboard_dr"><div class="pull-left"><i class="zmdi zmdi-landscape mr-20"></i><span class="right-nav-text">Dashboard</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
+					<li >
+						<a class="active" href="javascript:void(0);" data-toggle="collapse" data-target="#dashboard_dr"><div class="pull-left"><i class="icon-user mr-20"></i><span class="right-nav-text">Data Pelamar</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
 						<ul id="dashboard_dr" class="collapse collapse-level-1">
 							<li>
-								<a  href="index.html">Analytical</a>
+								<a  href="#">Biodata</a>
 							</li>
 							<li>
-								<a  href="index2.html">Demographic</a>
+								<a  href="#">Pendidikan</a>
 							</li>
 							<li>
-								<a href="index3.html">Project</a>
+								<a href="#">Riwayat Pekerjaan</a>
 							</li>
 							<li>
-								<a href="profile.html">profile</a>
+								<a href="#">Upload Dokumen</a>
 							</li>
 						</ul>
 					</li>
 					<li>
+						<a href="#"><div class="pull-left"><i class="zmdi zmdi-book mr-20"></i>
+						<span class="right-nav-text">Profil</span></div><div class="clearfix"></div></a>
+					</li>
+					<li>
+						<a href="#"><div class="pull-left"><i class="zmdi zmdi-power mr-20"></i>
+						<span class="right-nav-text">LogOut</span></div><div class="clearfix"></div></a>
+					</li>
+					
+					<!-- <li>
 						<a href="javascript:void(0);" data-toggle="collapse" data-target="#ecom_dr"><div class="pull-left"><i class="zmdi zmdi-shopping-basket mr-20"></i><span class="right-nav-text">E-Commerce</span></div><div class="pull-right"><span class="label label-success">hot</span></div><div class="clearfix"></div></a>
 						<ul id="ecom_dr" class="collapse collapse-level-1">
 							<li>
@@ -427,8 +435,8 @@
 					</li>
 					<li>
 						<a href="widgets.html"><div class="pull-left"><i class="zmdi zmdi-flag mr-20"></i><span class="right-nav-text">widgets</span></div><div class="pull-right"><span class="label label-warning">8</span></div><div class="clearfix"></div></a>
-					</li>
-					<li><hr class="light-grey-hr mb-10"/></li>
+					</li> -->
+					<!-- <li><hr class="light-grey-hr mb-10"/></li>
 					<li class="navigation-header">
 						<span>component</span> 
 						<i class="zmdi zmdi-more"></i>
@@ -633,9 +641,9 @@
 								<a href="google-map.html">Google Map</a>
 							</li>
 						</ul>
-					</li>
+					</li> -->
 					<li><hr class="light-grey-hr mb-10"/></li>
-					<li class="navigation-header">
+					<!-- <li class="navigation-header">
 						<span>featured</span> 
 						<i class="zmdi zmdi-more"></i>
 					</li>
@@ -697,29 +705,9 @@
 								<a href="faq.html">FAQ</a>
 							</li>
 						</ul>
-					</li>
-					<li>
-						<a href="documentation.html"><div class="pull-left"><i class="zmdi zmdi-book mr-20"></i><span class="right-nav-text">documentation</span></div><div class="clearfix"></div></a>
-					</li>
-					<li>
-						<a href="javascript:void(0);" data-toggle="collapse" data-target="#dropdown_dr_lv1"><div class="pull-left"><i class="zmdi zmdi-filter-list mr-20"></i><span class="right-nav-text">multilevel</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-						<ul id="dropdown_dr_lv1" class="collapse collapse-level-1">
-							<li>
-								<a href="#">Item level 1</a>
-							</li>
-							<li>
-								<a href="javascript:void(0);" data-toggle="collapse" data-target="#dropdown_dr_lv2">Dropdown level 2<div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-								<ul id="dropdown_dr_lv2" class="collapse collapse-level-2">
-									<li>
-										<a href="#">Item level 2</a>
-									</li>
-									<li>
-										<a href="#">Item level 2</a>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</li>
+					</li> -->
+					
+					
 				</ul>
 			</div>
 			<!-- /Left Sidebar Menu -->
