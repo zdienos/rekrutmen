@@ -27,11 +27,10 @@
 |
 */
 
-/*--- Administrator ROUTE --- */
 
 /* Home */
-$route['rekrutmen'] = "rekrutmen/profil";
-$route['rekrutmen/daftar'] = "rekrutmen/daftar";
+$route['rekrutmen'] = "rekrutmen/daftar";
+//$route['rekrutmen/profil'] = "rekrutmen/profil";
 
 // /* Adm_profil */
 // $route['adm_profil'] = "administrator/adm_profil";

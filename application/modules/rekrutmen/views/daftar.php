@@ -11,12 +11,12 @@
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		
 		<!-- vector map CSS -->
-		<link href="assets/jasny-bootstrap/dist/css/jasny-bootstrap.min.css" rel="stylesheet" type="text/css"/>
+		<link href="<?=base_url('assets/jasny-bootstrap/dist/css/jasny-bootstrap.min.css')?>" rel="stylesheet" type="text/css"/>
 		
 		
 		
 		<!-- Custom CSS -->
-		<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+		<link href="<?=base_url('assets/css/style.css')?>" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		<!--Preloader-->
@@ -29,7 +29,7 @@
 			<header class="sp-header">
 				<div class="sp-logo-wrap pull-left">
 					<a href="index.html">
-						<img class="brand-img mr-10" src="assets/img/logo.png" alt="brand"/>
+						<img class="brand-img mr-10" src="<?=base_url('assets/img/logo.png')?>" alt="brand"/>
 						<span class="brand-text">Kumala Group</span>
 					</a>
 				</div>
@@ -100,16 +100,16 @@
 		<!-- JavaScript -->
 		
 		<!-- jQuery -->
-		<script src="assets/jquery/dist/jquery.min.js"></script>
+		<script src="<?=base_url('assets/jquery/dist/jquery.min.js')?>"></script>
 		
 		<!-- Bootstrap Core JavaScript -->
-		<script src="assets/bootstrap/dist/js/bootstrap.min.js"></script>
-		<script src="assets/jasny-bootstrap/dist/js/jasny-bootstrap.min.js"></script>
+		<script src="<?=base_url('assets/bootstrap/dist/js/bootstrap.min.js')?>"></script>
+		<script src="<?=base_url('assets/jasny-bootstrap/dist/js/jasny-bootstrap.min.js')?>"></script>
 		
 		<!-- Slimscroll JavaScript -->
-		<script src="assets/js/jquery.slimscroll.js"></script>
+		<script src="<?=base_url('assets/js/jquery.slimscroll.js')?>"></script>
 		
 		<!-- Init JavaScript -->
-		<script src="assets/js/init.js"></script>
+		<script src="<?=base_url('assets/js/init.js')?>"></script>
 	</body>
 </html>

@@ -11,10 +11,10 @@
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		
 		<!-- vector map CSS -->
-		<link href="assets/jasny-bootstrap/dist/css/jasny-bootstrap.min.css" rel="stylesheet" type="text/css"/>
+		<link href="<?=base_url('assets/jasny-bootstrap/dist/css/jasny-bootstrap.min.css')?>" rel="stylesheet" type="text/css"/>
 		
 		<!-- Custom CSS -->
-		<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+		<link href="<?=base_url('assets/css/style.css')?>" rel="stylesheet" type="text/css">
 	</head>
 	
 	<body>
@@ -2036,25 +2036,25 @@
 		<!-- JavaScript -->
 		
 		<!-- jQuery -->
-		<script src="assets/jquery/dist/jquery.min.js"></script>
+		<script src="<?=base_url('assets/jquery/dist/jquery.min.js')?>"></script>
 		
 		<!-- Bootstrap Core JavaScript -->
-		<script src="assets/bootstrap/dist/js/bootstrap.min.js"></script>
-		<script src="assets/jasny-bootstrap/dist/js/jasny-bootstrap.min.js"></script>
+		<script src="<?=base_url('assets/bootstrap/dist/js/bootstrap.min.js')?>"></script>
+		<script src="<?=base_url('assets/jasny-bootstrap/dist/js/jasny-bootstrap.min.js')?>"></script>
 		
 		<!-- Slimscroll JavaScript -->
-		<script src="assets/js/jquery.slimscroll.js"></script>
+		<script src="<?=base_url('assets/js/jquery.slimscroll.js')?>"></script>
 	
 		<!-- Fancy Dropdown JS -->
-		<script src="assets/js/dropdown-bootstrap-extended.js"></script>
+		<script src="<?=base_url('assets/js/dropdown-bootstrap-extended.js')?>"></script>
 		
 		<!-- Owl JavaScript -->
-		<script src="assets/owl.carousel/dist/owl.carousel.min.js"></script>
+		<script src="<?=base_url('assets/owl.carousel/dist/owl.carousel.min.js')?>"></script>
 	
 		<!-- Switchery JavaScript -->
-		<script src="assets/switchery/dist/switchery.min.js"></script>
+		<script src="<?=base_url('assets/switchery/dist/switchery.min.js')?>"></script>
 	
 		<!-- Init JavaScript -->
-		<script src="assets/js/init.js"></script>
+		<script src="<?=base_url('assets/js/init.js')?>"></script>
 	</body>
 </html>
