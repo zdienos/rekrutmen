@@ -8,6 +8,12 @@
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="favicon.ico">
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+		<!-- Bootstrap Datetimepicker CSS -->
+		<link href="<?=base_url('assets/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css')?>" rel="stylesheet" type="text/css"/>
+
+		<!-- bootstrap-select CSS -->
+		<link href="<?=base_url('assets/bootstrap-select/dist/css/bootstrap-select.min.css')?>" rel="stylesheet" type="text/css"/>
 		
 		<!-- vector map CSS -->
 		<link href="<?=base_url('assets/jasny-bootstrap/dist/css/jasny-bootstrap.min.css')?>" rel="stylesheet" type="text/css"/>
@@ -830,28 +836,37 @@
 										<div class="form-wrap">
 											<form class="form-horizontal">
 											<div class="form-group">
-												<label class="control-label mb-8 col-sm-2">Nama Lengkap</label>
+												<label class="control-label mb-10 col-sm-2">Nama Lengkap</label>
 												<div class="col-sm-10">
 													<input type="text" class="form-control"  placeholder="Nama Lengkap">
 												</div>
 											</div>											
 											<div class="form-group">
-												<label class="control-label mb-8 col-sm-2">Tempat Tgl Lahir</label>
-												<div class="col-sm-4">
-													<input type="text" class="form-control"  placeholder="">
+												<label class="control-label mb-10 col-sm-2 col-xs-12">Tempat Tgl Lahir</label>
+												<div class="col-sm-4 col-xs-6">
+													<input type="text" class="form-control"  placeholder="Tempat lahir">
 												</div>												
-												<div class="col-sm-6">
-													<input type="text" class="form-control"  placeholder="">
+												<div class="col-sm-6 col-xs-6">
+													<div class='input-group date' id='datetimepicker1'>
+														<span class="input-group-addon">
+															<span class="fa fa-calendar"></span>
+														</span>
+														<input type='text' class="form-control" />
+													</div>
+												</div>
+											</div>											
+											<div class="form-group">
+												<label class="control-label mb-10 col-sm-2 col-xs-12">Jenis Kelamin</label>
+												<div class="col-sm-4 col-xs-6">
+													<select class="selectpicker" data-style="form-control btn-default btn-outline">
+													 		<option selected>Jenis Kelamin</option>
+															<option>Laki-laki</option>
+															<option>Perempuan</option>
+														</select>
 												</div>
 											</div>
 											<div class="form-group">
-												<label class="control-label mb-8 col-sm-2">No KTP</label>
-												<div class="col-sm-10">
-													<input type="text" class="form-control"  placeholder="">
-												</div>
-											</div>
-											<div class="form-group">
-												<label class="control-label mb-8 col-sm-2">Alamat</label>
+												<label class="control-label mb-10 col-sm-2">Alamat</label>
 												<div class="col-sm-10">
 													<input type="text" class="form-control"  placeholder="">
 												</div>
@@ -1017,6 +1032,12 @@
 		<!-- Bootstrap Core JavaScript -->
 		<script src="<?=base_url('assets/bootstrap/dist/js/bootstrap.min.js')?>"></script>
 		<script src="<?=base_url('assets/jasny-bootstrap/dist/js/jasny-bootstrap.min.js')?>"></script>
+
+		<!-- Moment JavaScript -->
+		<script type="text/javascript" src="<?=base_url('assets/moment/min/moment-with-locales.min.js')?>"></script>
+
+		<!-- Bootstrap Datetimepicker JavaScript -->
+		<script type="text/javascript" src="<?=base_url('assets/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js')?>"></script>
 		
 		<!-- Slimscroll JavaScript -->
 		<script src="<?=base_url('assets/js/jquery.slimscroll.js')?>"></script>
@@ -1029,8 +1050,28 @@
 	
 		<!-- Switchery JavaScript -->
 		<script src="<?=base_url('assets/switchery/dist/switchery.min.js')?>"></script>
+
+		<!-- Bootstrap Select JavaScript -->
+		<script src="<?=base_url('assets/bootstrap-select/dist/js/bootstrap-select.min.js')?>"></script>
 	
 		<!-- Init JavaScript -->
 		<script src="<?=base_url('assets/js/init.js')?>"></script>
+
+		<script>
+			/* Datetimepicker Init*/
+			$('#datetimepicker1').datetimepicker({
+					useCurrent: false,
+					icons: {
+							time: "fa fa-clock-o",
+							date: "fa fa-calendar",
+							up: "fa fa-arrow-up",
+							down: "fa fa-arrow-down"
+						},
+						format: 'DD/MM/YYYY'
+				}).on('dp.show', function() {
+				if($(this).data("DateTimePicker").date() === null)
+					$(this).data("DateTimePicker").date(moment());
+			});
+		</script>
 	</body>
 </html>
