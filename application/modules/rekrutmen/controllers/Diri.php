@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Profil extends CI_Controller {
+class Diri extends CI_Controller {
 
 	public function __construct()
 	{
@@ -11,7 +11,7 @@ class Profil extends CI_Controller {
 	{
 		$this->load->view('header');
 		$this->load->view('leftside');
-		$this->load->view('profil');
+		$this->load->view('diri');
 		$this->load->view('footer');
 		// die('cek');
 		// error_reporting(0);

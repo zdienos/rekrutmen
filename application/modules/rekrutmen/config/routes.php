@@ -29,7 +29,7 @@
 
 
 /* Home */
-$route['rekrutmen'] = "rekrutmen/profil";
+$route['rekrutmen'] = "rekrutmen/diri";
 //$route['rekrutmen/profil'] = "rekrutmen/profil";
 
 // /* Adm_profil */
