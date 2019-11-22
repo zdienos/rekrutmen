@@ -9,7 +9,10 @@ class Profil extends CI_Controller {
 
 	public function index()
 	{
+		$this->load->view('header');
+		$this->load->view('leftside');
 		$this->load->view('profil');
+		$this->load->view('footer');
 		// die('cek');
 		// error_reporting(0);
 		// $cek = $this->session->userdata('logged_in');
