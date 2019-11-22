@@ -26,7 +26,7 @@
 				<div class="panel panel-default card-view">
 					<div class="panel-heading">
 						<div class="pull-left">
-							<h6 class="panel-title txt-dark">Data Keluarga</h6>
+							<h6 class="panel-title txt-light">Data Keluarga</h6>
 						</div>
 						<div class="clearfix"></div>
 					</div>
@@ -90,10 +90,16 @@
 												</div>
 											</div>
 											<div class="form-group">
-												<label for="jenisKelamin" class="col-sm-3 control-label">Jenis Kelamin</label>
-												<div class="col-sm-9">
-													<input type="text" class="form-control" id="txtKelamin" name="txtKelamin" placeholder="Jenis kelamin">
-												</div>
+												<label class="control-label mb-10 col-sm-3 col-xs-12">Jenis Kelamin</label>
+												<div class="col-sm-6 col-xs-6">	
+													<div class="radio radio-info">
+														<input type="radio" name="radio" id="radio1" value="option1" checked="">
+														<label for="radio">Laki-laki														</label>
+														<input  type="radio" name="radio" id="radio2" value="option2" checked="">
+														<label style="margin-left:50px" for="radio2">Perempuan
+														</label>
+													</div>							
+												</div>											
 											</div>
 											<div class="form-group">
 												<label for="usia" class="col-sm-3 control-label">Usia</label>
@@ -102,27 +108,21 @@
 												</div>
 											</div>
 											<div class="form-group">
-												<label for="pendidikanTerakhir" class="col-sm-3 control-label">Pendidikan Terakhir</label>
-												<div class="col-sm-9">
-													<input type="text" class="form-control" id="txtPendidikan" name="txtPendidikan" placeholder="Pendidikan tearkhir">
-												</div>
-											</div>
-											<!-- <div class="form-group required">
-												<label for="startedOn" class="col-sm-3 control-label">Started On</label>
-												<div class="col-sm-9">
-													<input type="text" class="form-control" id="startedOn" name="startedOn" placeholder="Started On" required>
-												</div>
-											</div>
-											<div class="form-group">
-												<label for="dob" class="col-sm-3 control-label">Date of Birth</label>
-												<div class="col-sm-9">
-													<input type="text" class="form-control" id="dob" name="dob" placeholder="Date of Birth">
-												</div>
-											</div> -->
+												<label class="control-label col-sm-3">Pendidikan</label>
+												<div class="col-sm-4">
+													<select class="form-control" >
+														<option>S2</option>
+														<option>S1</option>
+														<option>D3</option>
+														<option>D1</option>
+														<option>SMA</option>
+													</select>
+												</div>												
+											</div>											
 										</div>
 										<div class="modal-footer">
-											<button type="submit" class="btn btn-primary">Save changes</button>
-											<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+											<button type="submit" class="btn btn-primary">Simpan</button>
+											<button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
 										</div>
 									</form>
 								</div>

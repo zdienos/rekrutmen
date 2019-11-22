@@ -6014,7 +6014,7 @@
 		deleteRow: function(row){},
 		showText: '<span class="fooicon fooicon-pencil" aria-hidden="true"></span> Edit rowszzz',
 		hideText: 'Cancel',
-		addText: 'Tambah Data',
+		addText: '<span class="fooicon fooicon-plus" aria-hidden="true"></span>', //tambah data
 		editText: '<span class="fooicon fooicon-pencil" aria-hidden="true"></span>',
 		deleteText: '<span class="fooicon fooicon-trash" aria-hidden="true"></span>',
 		column: {

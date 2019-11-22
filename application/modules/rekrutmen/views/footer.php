@@ -86,7 +86,7 @@
                         addRow: function(){
                             $modal.removeData('row');
                             $editor[0].reset();
-                            $editorTitle.text('');
+                            $editorTitle.text('Tambah Data Keluarga');
                             $modal.modal('show');
                         },
                         editRow: function(row){
@@ -99,7 +99,7 @@
                             $editor.find('#txtPendidikan').val(values.txtPendidikan);
 
                             $modal.data('row', row);
-                            $editorTitle.text('Edit row #' + values.txtNo);
+                            $editorTitle.text('Edit Data Keluarga #' + values.txtNo);
                             $modal.modal('show');
                         },
                         deleteRow: function(row){
@@ -110,7 +110,7 @@
                     }
                 }),
                 uid = 3;
-                                
+
                 $editor.on('submit', function(e){
                     if (this.checkValidity && !this.checkValidity()) return;
                     e.preventDefault();
