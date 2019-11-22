@@ -36,7 +36,7 @@
 								<table id="footable_2" class="table" data-paging="true" data-filtering="false" data-sorting="true" data-editing="true" >
 									<thead>
 									<tr>
-										<th data-name="txtNo" data-breakpoints="xs" data-type="number">No</th>
+										<th data-name="N" data-breakpoints="xs" data-type="number">No</th>
 										<th data-name="txtHubungan">Hubungan Keluarga</th>
 										<th data-name="txtNama">Nama</th>
 										<th data-name="txtKelamin" data-breakpoints="xs">Jenis Kelamin</th>
@@ -76,7 +76,7 @@
 											<h5 class="modal-title" id="editor-title">Add Rowzzz</h5>
 										</div>
 										<div class="modal-body">
-											<input type="number" id="id" name="id" class="hidden"/>
+											<input type="number" id="txtNo" name="txtNo" class="hidden"/>
 											<div class="form-group required">
 												<label for="hubungan" class="col-sm-3 control-label">Hubungan</label>
 												<div class="col-sm-9">
@@ -92,19 +92,19 @@
 											<div class="form-group">
 												<label for="jenisKelamin" class="col-sm-3 control-label">Jenis Kelamin</label>
 												<div class="col-sm-9">
-													<input type="text" class="form-control" id="txtKelamin" name="txtKelamin" placeholder="Jenis kelamin">
+													<input type="text" class="form-control" id="txtKelamin" name="txtKelamin" placeholder="Jenis kelamin" required>
 												</div>
 											</div>
 											<div class="form-group">
 												<label for="usia" class="col-sm-3 control-label">Usia</label>
 												<div class="col-sm-9">
-													<input type="text" class="form-control" id="txtUsia" name="txtUsia" placeholder="Usia">
+													<input type="text" class="form-control" id="txtUsia" name="txtUsia" placeholder="Usia" required>
 												</div>
 											</div>
 											<div class="form-group">
 												<label for="pendidikanTerakhir" class="col-sm-3 control-label">Pendidikan Terakhir</label>
 												<div class="col-sm-9">
-													<input type="text" class="form-control" id="txtPendidikan" name="txtPendidikan" placeholder="Pendidikan tearkhir">
+													<input type="text" class="form-control" id="txtPendidikan" name="txtPendidikan" placeholder="Pendidikan tearkhir" required>
 												</div>
 											</div>
 											<!-- <div class="form-group required">
@@ -121,8 +121,8 @@
 											</div> -->
 										</div>
 										<div class="modal-footer">
-											<button type="submit" class="btn btn-primary">Save changes</button>
-											<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+											<button type="submit" class="btn btn-primary">Simpan</button>
+											<button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
 										</div>
 									</form>
 								</div>

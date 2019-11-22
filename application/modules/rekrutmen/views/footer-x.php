@@ -110,7 +110,13 @@
                     }
                 }),
                 uid = 3;
-                                
+                $editor.find('#txtNo').val(values.txtNo);
+                $editor.find('#txtHubungan').val(values.txtHubungan);
+                $editor.find('#txtNama').val(values.txtNama);
+                $editor.find('#txtKelamin').val(values.txtKelamin);
+                $editor.find('#txtUsia').val(values.txtUsia);
+                $editor.find('#txtPendidikan').val(values.txtPendidikan);
+
                 $editor.on('submit', function(e){
                     if (this.checkValidity && !this.checkValidity()) return;
                     e.preventDefault();
