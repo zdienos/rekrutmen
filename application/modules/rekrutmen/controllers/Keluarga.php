@@ -9,10 +9,12 @@ class Keluarga extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('header');
-		$this->load->view('leftside');
-		$this->load->view('keluarga');
-		$this->load->view('footer');
+		$this->load->view('template/header');
+		$this->load->view('template/leftside');
+		$this->load->view('keluarga/keluarga');
+		$this->load->view('template/footer_js');
+		$this->load->view('keluarga/js');
+		$this->load->view('template/footer');
 		// die('cek');
 		// error_reporting(0);
 		// $cek = $this->session->userdata('logged_in');

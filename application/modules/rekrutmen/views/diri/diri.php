@@ -24,7 +24,7 @@
 		
 		<div class="row">
 		<div class="col-sm-12">
-				<div class="panel panel-default card-view">
+				<div class="panel panel-inverse card-view">
 					<div class="panel-heading">
 						<div class="pull-left">
 							<h6 class="panel-title txt-dark">Identitas Diri</h6>
@@ -79,9 +79,9 @@
 										<input type="text" class="form-control"  placeholder="">
 									</div>
 								</div>
-								<div class="form-group mt-10 mb-10">
+								<div class="form-group ">
 									<label class="control-label mb-10 col-sm-2">Propinsi</label>
-									<div class="col-sm-4">
+									<div class="mb-10 col-sm-4">
 										<select class="form-control" >
 											<option>Sulawesi Selatan</option>
 											<option>Sulawesi Barat</option>
@@ -91,8 +91,8 @@
 										</select>
 									</div>
 								<!-- </div>
-								<div class="form-group mt-30 mb-30"> -->
-									<label class="control-label mt-10  col-sm-2">Kota</label>
+								<div class="form-group "> -->
+									<label class="control-label mb-10 col-sm-2">Kota</label>
 									<div class="col-sm-4">
 										<select class="form-control" >
 											<option>Makassar</option>
@@ -105,25 +105,33 @@
 								</div>
 								<div class="form-group">
 									<label class="control-label mb-10 col-sm-2">No Handphone</label>
-									<div class="col-sm-10">
+									<div class="mb-10 col-sm-4">
 										<input type="text" class="form-control"  placeholder="">
 									</div>
-								</div>
-								<div class="form-group">
+								<!-- </div>
+								<div class="form-group"> -->
 									<label class="control-label mb-10 col-sm-2">No KTP</label>
-									<div class="col-sm-10">
+									<div class="col-sm-4">
 										<input type="text" class="form-control"  placeholder="">
 									</div>
 								</div>
 								<div class="form-group mt-10 mb-10"> 
 									<label class="control-label mb-10  col-sm-2">Agama</label>
-									<div class="col-sm-4">
+									<div class="mb-20 col-sm-4">
 										<select class="form-control" >
 											<option>Islam</option>
 											<option>Katolik</option>
 											<option>Protestan</option>
 											<option>Budha</option>
 											<option>Hindu</option>
+										</select>
+									</div>
+									<label class="control-label mb-10  col-sm-2">Status Pernikahan</label>
+									<div class="col-sm-4">
+										<select class="form-control" >
+											<option>Lajang</option>
+											<option>Menikah</option>
+											<option>Bercerai</option>										
 										</select>
 									</div>
 								</div>

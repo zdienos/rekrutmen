@@ -9,10 +9,13 @@ class Diri extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('header');
-		$this->load->view('leftside');
-		$this->load->view('diri');
-		$this->load->view('footer');
+		$this->load->view('template/header');
+		$this->load->view('template/leftside');
+		$this->load->view('diri/diri');
+		$this->load->view('template/footer_js');
+		$this->load->view('diri/js');
+		$this->load->view('template/footer');
+
 		// die('cek');
 		// error_reporting(0);
 		// $cek = $this->session->userdata('logged_in');
@@ -20,9 +23,7 @@ class Diri extends CI_Controller {
 		// if(!empty($cek) && $level=='administrator'){
 		// 	$d['judul']="Dashboard";
 		// 	$d['class'] = "home";
-
 		// 	$d['content']= 'adm_isi';
-
 		// 	$this->load->view('adm_home',$d);
 		// }else{
 		// 	redirect('login','refresh');

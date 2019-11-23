@@ -23,10 +23,10 @@
 		<!-- Row -->
 		<div class="row">
 			<div class="col-sm-12">
-				<div class="panel panel-default card-view">
+				<div class="panel panel-inverse card-view">
 					<div class="panel-heading">
 						<div class="pull-left">
-							<h6 class="panel-title txt-light">Data Keluarga</h6>
+							<h6 class="panel-title txt-dark">Data Keluarga (termasuk diri Anda sendiri)</h6>
 						</div>
 						<div class="clearfix"></div>
 					</div>
@@ -47,7 +47,7 @@
 									</tr>
 									</thead>
 									<tbody>
-									<tr data-expanded="true">
+									<tr ><!--data-expanded="true"-->
 										<td>1</td>
 										<td>Ayah</td>
 										<td>Abdurahman</td>
