@@ -8,10 +8,26 @@
         //var radioValue = $('input[name="radKelamin"]:checked').val();                
         //var radioValue=$('input:radio:checked').val();
         //alert(radioValue); });
-
+       
+        //header('Content-Type: application/json');
+        //echo json_encode($data);
 
     $(function () {
         "use strict";
+        
+
+        $('#footableTess').footable({
+		"columns": [
+            {'name':"id","title":"ID","breakpoints":"xs sm","type":"number","style":{"width":80,"maxWidth":80}},
+            {'name':"jjnama","title":"First Name"},
+            {'name':"nik","title":"Last Name"},
+            {'name':"departemen","title":"Never seen but always around","visible":false,"filterable":false},
+            {'name':"lokasi","title":"Job Title","breakpoints":"xs sm","style":{"maxWidth":200,"overflow":"hidden","textOverflow":"ellipsis","wordBreak":"keep-all","whiteSpace":"nowrap"}},
+            {'name':"catatan","title":"Status"}
+            ],
+		"rows": $.get('http://localhost/kumala/karyawan/karyawan_json')
+	    });
+                
                         
         /*Editing FooTable*/                
         var $modal = $('#editor-modal'),

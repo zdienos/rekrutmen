@@ -33,6 +33,8 @@
 					<div class="panel-wrapper collapse in">
 						<div class="panel-body">
 							<div class="table-wrap">
+								<table id="footableTess" class="table" data-paging="true" data-filtering="false" data-sorting="true" data-editing="true" >
+								</table>
 								<table id="footableKeluarga" class="table" data-paging="true" data-filtering="false" data-sorting="true" data-editing="true" >
 									<thead>
 									<tr>
