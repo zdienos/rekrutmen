@@ -6,8 +6,8 @@
 		<title>Dashboard Pelamar</title>
 		
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="favicon.ico">
-		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="<?=base_url('assets/img/favicon.png')?>">
+		<link rel="icon" href="<?=base_url('assets/img/favicon.png')?>" type="image/x-icon">
 
 		<!-- Bootstrap Datetimepicker CSS -->
 		<link href="<?=base_url('assets/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css')?>" rel="stylesheet" type="text/css"/>
@@ -265,7 +265,7 @@
 										<div class="sl-item">
 											<a href="javascript:void(0)">
 												<div class="sl-avatar">
-													<img class="img-responsive" src="dist/img/avatar.jpg" alt="avatar"/>
+													<img class="img-responsive" src="<?=base_url('assets/img/avatar.jpg')?>" alt="avatar"/>
 												</div>
 												<div class="sl-content">
 													<span class="inline-block capitalize-font  pull-left truncate head-notifications">Sandy Doe</span>

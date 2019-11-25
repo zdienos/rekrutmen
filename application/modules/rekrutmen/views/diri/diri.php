@@ -118,13 +118,24 @@
 								<div class="form-group mt-10 mb-10"> 
 									<label class="control-label mb-10  col-sm-2">Agama</label>
 									<div class="mb-20 col-sm-4">
-										<select class="form-control" >
+										<select class="form-control" name="cari_agama" id="cari_agama">
+											<option value="" selected="selected">--Pilih Agama--</option>
+											<?php
+											$data = $this->Model_hrd->data_p_agama();
+											foreach($data->result() as $dt){
+											?>
+											<option value="<?php echo $dt->id_agama;?>"><?php echo $dt->nama_agama;?></option>
+											<?php
+											}
+											?>
+										</select>
+										<!-- <select class="form-control" >
 											<option>Islam</option>
 											<option>Katolik</option>
 											<option>Protestan</option>
 											<option>Budha</option>
 											<option>Hindu</option>
-										</select>
+										</select> -->
 									</div>
 									<label class="control-label mb-10  col-sm-2">Status Pernikahan</label>
 									<div class="col-sm-4">

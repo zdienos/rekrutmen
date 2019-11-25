@@ -1,16 +1,33 @@
 <script>            
     /*FooTable Init*/
+    //$("#optPendidikan").change(function () {
+    //alert($("#optPendidikan :selected").attr('value')) } );
+    //$('.radKelamin').on('change', function() {
+    //alert($('.radKelamin:checked').attr('value')); });
+    //$('input[name="radKelamin"]').on('change', function() {
+        //var radioValue = $('input[name="radKelamin"]:checked').val();                
+        //var radioValue=$('input:radio:checked').val();
+        //alert(radioValue); });
+       
+        //header('Content-Type: application/json');
+        //echo json_encode($data);
+
     $(function () {
         "use strict";
-                        
+                                
         /*Editing FooTable*/                
         var $modal = $('#editor-modal'),
         $editor = $('#editor'),
         $editorTitle = $('#editor-title'),
-        ft = FooTable.init('#footable_2', {
+        ft = FooTable.init('#footablePendidikan', {
             editing: {
                 enabled: true,
                 alwaysShow: true, 
+                column: {
+                        "classes": "footable-editing",
+                        "name": "editing",
+                        "title": "aksi",                        
+                },
                 addRow: function(){
                     $modal.removeData('row');
                     $editor[0].reset();
@@ -21,10 +38,15 @@
                     var values = row.val();
                     $editor.find('#txtNo').val(values.txtNo);
                     $editor.find('#txtHubungan').val(values.txtHubungan);
-                    $editor.find('#txtNama').val(values.txtNama);
-                    $editor.find('#txtKelamin').val(values.txtKelamin);
+                    $editor.find('#txtNama').val(values.txtNama);                    
+                    var kelamin = values.txtKelamin;                     
+                    if (kelamin=="Laki-laki") {$('#radio1').prop('checked',true);$('#radio2').prop('checked',false);}
+                     else {$('#radio1').prop('checked',false);$('#radio2').prop('checked',true);}                         
                     $editor.find('#txtUsia').val(values.txtUsia);
-                    $editor.find('#txtPendidikan').val(values.txtPendidikan);
+                    var zz = values.txtPendidikan;  
+
+                    $('#optPendidikan').val(zz);  //bisa
+
 
                     $modal.data('row', row);
                     $editorTitle.text('Edit Data Keluarga #' + values.txtNo);
@@ -47,15 +69,14 @@
                     txtNo: $editor.find('#txtNo').val(),
                     txtHubungan: $editor.find('#txtHubungan').val(),
                     txtNama: $editor.find('#txtNama').val(),
-                    txtKelamin: $editor.find('#txtKelamin').val(),
+                    txtKelamin: $editor.find('input:radio:checked').val(),
                     txtUsia: $editor.find('#txtUsia').val(),
-                    txtPendidikan: $editor.find('#txtPendidikan').val()
+                    txtPendidikan: $editor.find('#optPendidikan').val()
                     //startedOn: moment($editor.find('#startedOn').val(), 'YYYY-MM-DD'),
                     //dob: moment($editor.find('#dob').val(), 'YYYY-MM-DD')
                 };
 
-            if (row instanceof FooTable.Row){
-                console.log('this');
+            if (row instanceof FooTable.Row){                
                 row.val(values);
             } else {
                 values.txtNo = uid++;
