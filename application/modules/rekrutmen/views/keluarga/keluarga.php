@@ -27,7 +27,10 @@
 					<div class="panel-heading">
 						<div class="pull-left">
 							<h6 class="panel-title txt-dark">Data Keluarga (termasuk diri Anda sendiri)</h6>
-						</div>
+						</div>						
+						<!-- <div class="pull-right">
+							<button type="button" class="btn btn-primary footable-add"><span class="fooicon fooicon-plus" aria-hidden="true"></span></button>
+						</div> -->
 						<div class="clearfix"></div>
 					</div>
 					<div class="panel-wrapper collapse in">
@@ -41,7 +44,7 @@
 										<th data-name="txtNama">Nama</th>
 										<th data-name="txtKelamin" data-breakpoints="xs">Jenis Kelamin</th>
 										<th data-name="txtUsia" data-breakpoints="xs">Usia</th>
-										<th data-name="txtPendidikan" data-breakpoints="xs">Pendidikan Terakhir</th>	
+										<th data-name="txtPendidikan" data-breakpoints="xs">Pendidikan Terakhir</th>										
 										<!-- <th data-name="startedOn" data-breakpoints="xs sm" data-type="date" data-format-string="MMMM Do YYYY">Started On</th>
 										<th data-name="dob" data-breakpoints="xs sm md" data-type="date" data-format-string="MMMM Do YYYY">Date of Birth</th> -->
 									</tr>
@@ -65,6 +68,7 @@
 									</tr>										
 									</tbody>
 								</table>
+
 
 								<!--Editor-->
 								<div class="modal fade" id="editor-modal" tabindex="-1" role="dialog" aria-labelledby="editor-title">
@@ -129,6 +133,15 @@
 								</div>
 							</div>
 							<!--/Editor-->
+							<div class="row">
+								<div class="form-group mb-0 mt-30"> 
+									<div class="col-sm-10">
+										<button type="button" class="btn btn-success btn-anim"><i class="ti-save"></i><span class="btn-text">Simpan</span></button>
+										<button type="button" class="btn btn-default btn-anim"><i class="ti-arrow-left"></i><span class="btn-text">Kembali</span></button>
+									</div>
+								</div>
+							</div>
+							
 						</div>
 					</div>
 				</div>

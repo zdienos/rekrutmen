@@ -14,21 +14,7 @@
 
     $(function () {
         "use strict";
-        
-
-        $('#footableTess').footable({
-		"columns": [
-            {'name':"id","title":"ID","breakpoints":"xs sm","type":"number","style":{"width":80,"maxWidth":80}},
-            {'name':"jjnama","title":"First Name"},
-            {'name':"nik","title":"Last Name"},
-            {'name':"departemen","title":"Never seen but always around","visible":false,"filterable":false},
-            {'name':"lokasi","title":"Job Title","breakpoints":"xs sm","style":{"maxWidth":200,"overflow":"hidden","textOverflow":"ellipsis","wordBreak":"keep-all","whiteSpace":"nowrap"}},
-            {'name':"catatan","title":"Status"}
-            ],
-		"rows": $.get('http://localhost/kumala/karyawan/karyawan_json')
-	    });
-                
-                        
+                                
         /*Editing FooTable*/                
         var $modal = $('#editor-modal'),
         $editor = $('#editor'),
@@ -37,6 +23,11 @@
             editing: {
                 enabled: true,
                 alwaysShow: true, 
+                column: {
+                        "classes": "footable-editing",
+                        "name": "editing",
+                        "title": "aksi",                        
+                },
                 addRow: function(){
                     $modal.removeData('row');
                     $editor[0].reset();
