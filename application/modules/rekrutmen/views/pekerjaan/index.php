@@ -40,7 +40,8 @@
 									<thead>
 									<tr>
 										<th data-name="txtNo" data-breakpoints="xs" data-type="number">No</th>
-										<th data-name="txtTingkat">Tingkat/Jenjang</th>
+										<th data-name="idPendidikan" data-breakpoints="xs" data-visible="false">ID</th>										
+										<th data-name="txtPendidikan">Tingkat/Jenjang</th>
 										<th data-name="txtNamaSekolah">Nama Sekolah</th>
 										<th data-name="txtKota" data-breakpoints="xs">Kota</th>
 										<th data-name="txtTahunLulus" data-breakpoints="xs">Tahun Lulus</th>
@@ -52,6 +53,7 @@
 									</thead>
 									<tbody>
 									<tr ><!--data-expanded="true"-->
+										<td>1</td>
 										<td>1</td>
 										<td>SD</td>
 										<td>SDN Mangkura V</td>
@@ -75,11 +77,19 @@
 										</div>
 										<div class="modal-body">
 											<input type="number" id="id" name="id" class="hidden"/>
-											<div class="form-group required">
-												<label for="hubungan" class="col-sm-3 control-label">Tingkat/Jenjang</label>
-												<div class="col-sm-9">
-													<input type="text" class="form-control" id="txtJenjang" name="txtJenjang" placeholder="Tingkat/Jenjang" required>
-												</div>
+											<div class="form-group">
+												<label class="control-label col-sm-3">Tingkat/Jenjang Pendidikan</label>
+												<div class="col-sm-4">
+													<select id="optPendidikan" name="optPendidikan" class="form-control" >
+													<?php
+														foreach($d_pendidikan->result() as $dt){
+														?>
+														<option value="<?php echo $dt->id_pendidikan;?>"><?php echo $dt->nama_pendidikan;?></option>
+														<?php
+														}
+													?>
+													</select>													
+												</div>												
 											</div>
 											<div class="form-group required">
 												<label for="nama" class="col-sm-3 control-label">Nama Sekolah</label>

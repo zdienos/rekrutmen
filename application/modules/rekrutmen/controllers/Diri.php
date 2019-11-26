@@ -9,10 +9,12 @@ class Diri extends CI_Controller {
 	}
 
 	public function index()
-	{
+	{ 	
+		$data['d_agama'] = $this->Model_hrd->data_p_agama();
+
 		$this->load->view('template/header');
 		$this->load->view('template/leftside');
-		$this->load->view('diri/diri');
+		$this->load->view('diri/index', $data);
 		$this->load->view('template/footer_js');
 		$this->load->view('diri/js');
 		$this->load->view('template/footer');

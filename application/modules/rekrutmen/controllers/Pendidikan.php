@@ -4,14 +4,17 @@ class Pendidikan extends CI_Controller {
 
 	public function __construct()
 	{
-	    parent::__construct();
+		parent::__construct();
+		$this->load->model('Model_hrd');
 	}
 
 	public function index()
 	{
+		$data['d_pendidikan'] = $this->Model_hrd->data_p_pendidikan();
+
 		$this->load->view('template/header');
 		$this->load->view('template/leftside');
-		$this->load->view('pendidikan/pendidikan');
+		$this->load->view('pendidikan/index', $data);
 		$this->load->view('template/footer_js');
 		$this->load->view('pendidikan/js');
 		$this->load->view('template/footer');

@@ -12,7 +12,7 @@
 			<div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
 				<ol class="breadcrumb">
 					<li><a href="index.html">Data Pelamar</a></li>							
-					<li class="active"><span>Identitas Diri</span></li>
+					<li class="active"><span>Riwayat Pekerjaan</span></li>
 				</ol>
 			</div>
 			<!-- /Breadcrumb -->
@@ -20,14 +20,21 @@
 		</div>
 		<!-- /Title -->
 
-			
+			Nama Perusahaan
+			Alamat
+			Divisi
+			Nama atasan
+			Alasan Keluar
+			Tgl masuk
+			Tgl Keluar
+			Job Desk
 		
 		<div class="row">
 		<div class="col-sm-12">
 				<div class="panel panel-inverse card-view">
 					<div class="panel-heading">
 						<div class="pull-left">
-							<h6 class="panel-title txt-dark">Identitas Diri</h6>
+							<h6 class="panel-title txt-dark">Riwayat Pekerjaan</h6>
 						</div>
 						<div class="clearfix"></div>
 					</div>
@@ -121,12 +128,11 @@
 										<select class="form-control" name="cari_agama" id="cari_agama">
 											<option value="" selected="selected">--Pilih Agama--</option>
 											<?php
-											$data = $this->Model_hrd->data_p_agama();
-											foreach($data->result() as $dt){
-											?>
-											<option value="<?php echo $dt->id_agama;?>"><?php echo $dt->nama_agama;?></option>
-											<?php
-											}
+												foreach($d_agama->result() as $dt){
+												?>
+												<option value="<?php echo $dt->id_agama;?>"><?php echo $dt->nama_agama;?></option>
+												<?php
+												}
 											?>
 										</select>
 										<!-- <select class="form-control" >

@@ -43,10 +43,9 @@
                     if (kelamin=="Laki-laki") {$('#radio1').prop('checked',true);$('#radio2').prop('checked',false);}
                      else {$('#radio1').prop('checked',false);$('#radio2').prop('checked',true);}                         
                     $editor.find('#txtUsia').val(values.txtUsia);
-                    var zz = values.txtPendidikan;  
-
-                    $('#optPendidikan').val(zz);  //bisa
-
+                    //var zz = values.txtPendidikan;  
+                    //alert(zz);
+                    $('#optPendidikan').val(values.idPendidikan);  //bisa
 
                     $modal.data('row', row);
                     $editorTitle.text('Edit Data Keluarga #' + values.txtNo);
@@ -71,7 +70,8 @@
                     txtNama: $editor.find('#txtNama').val(),
                     txtKelamin: $editor.find('input:radio:checked').val(),
                     txtUsia: $editor.find('#txtUsia').val(),
-                    txtPendidikan: $editor.find('#optPendidikan').val()
+                    idPendidikan: $editor.find('#optPendidikan').val(),
+                    txtPendidikan: $editor.find('#optPendidikan :selected').text(),// +':'+$editor.find('#optPendidikan :selected').text(),
                     //startedOn: moment($editor.find('#startedOn').val(), 'YYYY-MM-DD'),
                     //dob: moment($editor.find('#dob').val(), 'YYYY-MM-DD')
                 };

@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Keluarga extends CI_Controller {
+class Pekerjaan extends CI_Controller {
 
 	public function __construct()
 	{
@@ -11,12 +11,12 @@ class Keluarga extends CI_Controller {
 	public function index()
 	{
 		$data['d_pendidikan'] = $this->Model_hrd->data_p_pendidikan();
-		
+
 		$this->load->view('template/header');
 		$this->load->view('template/leftside');
-		$this->load->view('keluarga/index', $data);
+		$this->load->view('pekerjaan/index', $data);
 		$this->load->view('template/footer_js');
-		$this->load->view('keluarga/js');
+		$this->load->view('pekerjaan/js');
 		$this->load->view('template/footer');
 		// die('cek');
 		// error_reporting(0);
