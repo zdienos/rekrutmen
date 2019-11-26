@@ -12,7 +12,7 @@
 			<div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
 				<ol class="breadcrumb">
 					<li><a href="index.html">Data Pelamar</a></li>							
-					<li class="active"><span>Riwayat Pekerjaan</span></li>
+					<li class="active"><span>Identitas Diri</span></li>
 				</ol>
 			</div>
 			<!-- /Breadcrumb -->
@@ -20,21 +20,14 @@
 		</div>
 		<!-- /Title -->
 
-			Nama Perusahaan
-			Alamat
-			Divisi
-			Nama atasan
-			Alasan Keluar
-			Tgl masuk
-			Tgl Keluar
-			Job Desk
+			
 		
 		<div class="row">
 		<div class="col-sm-12">
 				<div class="panel panel-inverse card-view">
 					<div class="panel-heading">
 						<div class="pull-left">
-							<h6 class="panel-title txt-dark">Riwayat Pekerjaan</h6>
+							<h6 class="panel-title txt-dark">Identitas Diri</h6>
 						</div>
 						<div class="clearfix"></div>
 					</div>

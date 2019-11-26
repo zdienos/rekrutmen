@@ -12,14 +12,44 @@
         //header('Content-Type: application/json');
         //echo json_encode($data);
 
+    	
+
     $(function () {
         "use strict";
+
+        $('#dateMasuk').datetimepicker({
+				useCurrent: false,
+				icons: {
+						time: "fa fa-clock-o",
+						date: "fa fa-calendar",
+						up: "fa fa-arrow-up",
+						down: "fa fa-arrow-down"
+					},
+					format: 'DD/MM/YYYY'
+				}).on('dp.show', function() {
+				if($(this).data("DateTimePicker").date() === null)
+					$(this).data("DateTimePicker").date(moment());					
+			});	
+            $('#dateKeluar').datetimepicker({
+				useCurrent: false,
+				icons: {
+						time: "fa fa-clock-o",
+						date: "fa fa-calendar",
+						up: "fa fa-arrow-up",
+						down: "fa fa-arrow-down"
+					},
+					format: 'DD/MM/YYYY'
+				}).on('dp.show', function() {
+				if($(this).data("DateTimePicker").date() === null)
+					$(this).data("DateTimePicker").date(moment());					
+			});		
+ 
                                 
         /*Editing FooTable*/                
         var $modal = $('#editor-modal'),
         $editor = $('#editor'),
         $editorTitle = $('#editor-title'),
-        ft = FooTable.init('#footablePendidikan', {
+        ft = FooTable.init('#footablePekerjaan', {
             editing: {
                 enabled: true,
                 alwaysShow: true, 
@@ -27,31 +57,23 @@
                         "classes": "footable-editing",
                         "name": "editing",
                         "title": "aksi",                        
-                },
+                    },
                 addRow: function(){
                     $modal.removeData('row');
                     $editor[0].reset();
                     $editorTitle.text('Tambah Data Pendidikan');
                     $modal.modal('show');
-                },
-                    idPendidikan: $editor.find('#optPendidikan').val(),
-                    txtPendidikan: $editor.find('#optPendidikan :selected').text(),// +':'+$editor.find('#optPendidikan :selected').text(),
-                    txtNamaSekolah: $editor.find('#txtNamaSekolah').val(),
-                    txtKota: $editor.find('#txtKota').val(),
-                    txtTahunLulus: $editor.find('#txtTahunLulus').val(),
-                    txtJurusan: $editor.find('#txtJurusan').val(),
-                    txtNilaiRatarata: $editor.find('#txtNilaiRatarata').val(),     
-
+                    },                
                 editRow: function(row){
-                    var values = row.val();
+                    var values = row.val();                   
                     $editor.find('#txtNo').val(values.txtNo);
-                    $editor.find('#txtPendidikan').val(values.txtPendidikan);
-                    $editor.find('#txtNamaSekolah').val(values.txtNamaSekolah);
-                    $editor.find('#txtKota').val(values.txtKota);
-                    $editor.find('#txtTahunLulus').val(values.txtTahunLulus);
-                    $editor.find('#txtJurusan').val(values.txtJurusan);
-                    $editor.find('#txtNilaiRatarata').val(values.txtNilaiRatarata);                    
-                    $('#optPendidikan').val(values.idPendidikan);  //bisa
+                    $editor.find('#txtNamaPerusahaan').val(values.txtNamaPerusahaan);
+                    $editor.find('#txtAlamatPerusahaan').val(values.txtAlamatPerusahaan);
+                    $editor.find('#txtDivisi').val(values.txtDivisi);
+                    $editor.find('#txtAlasanKeluar').val(values.txtAlasanKeluar);
+                    $editor.find('#txtTglMasuk').val(values.txtTglMasuk);
+                    $editor.find('#txtTglKeluar').val(values.txtTglKeluar);  
+                    $editor.find('#txtUraianTugas').val(values.txtUraianTugas);                    
 
                     $modal.data('row', row);
                     $editorTitle.text('Edit Data Pendidikan #' + values.txtNo);
@@ -72,14 +94,13 @@
             var row = $modal.data('row'),
                 values = {
                     txtNo: $editor.find('#txtNo').val(),
-                    idPendidikan: $editor.find('#optPendidikan').val(),
-                    txtPendidikan: $editor.find('#optPendidikan :selected').text(),// +':'+$editor.find('#optPendidikan :selected').text(),
-                    txtNamaSekolah: $editor.find('#txtNamaSekolah').val(),
-                    txtKota: $editor.find('#txtKota').val(),
-                    txtTahunLulus: $editor.find('#txtTahunLulus').val(),
-                    txtJurusan: $editor.find('#txtJurusan').val(),
-                    txtNilaiRatarata: $editor.find('#txtNilaiRatarata').val(),                    
-                    
+                    txtNamaPerusahaan: $editor.find('#txtNamaPerusahaan').val(),
+                    txtAlamatPerusahaan: $editor.find('#txtAlamatPerusahaan').val(),
+                    txtDivisi: $editor.find('#txtDivisi').val(),
+                    txtAlasanKeluar: $editor.find('#txtAlasanKeluar').val(),
+                    txtTglMasuk: $editor.find('#txtTglMasuk').val(),
+                    txtTglKeluar: $editor.find('#txtTglKeluar').val(),                    
+                    txtUraianTugas: $editor.find('#txtUraianTugas').val()
                     //startedOn: moment($editor.find('#startedOn').val(), 'YYYY-MM-DD'),
                     //dob: moment($editor.find('#dob').val(), 'YYYY-MM-DD')
                 };
