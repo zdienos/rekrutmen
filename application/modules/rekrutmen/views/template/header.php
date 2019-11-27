@@ -335,7 +335,7 @@
 								</li>
 								<li class="divider"></li>
 								<li>
-									<a href="#"><i class="zmdi zmdi-power"></i><span>Log Out</span></a>
+									<a href="<?=base_url('otentikasi/logout')?>"><i class="zmdi zmdi-power"></i><span>Log Out</span></a>
 								</li>
 							</ul>
 						</li>

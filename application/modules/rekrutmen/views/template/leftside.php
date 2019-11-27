@@ -30,8 +30,8 @@
             <span class="right-nav-text">Profil</span></div><div class="clearfix"></div></a>
         </li>
         <li>
-            <a href="#"><div class="pull-left"><i class="zmdi zmdi-power mr-20"></i>
-            <span class="right-nav-text">LogOut</span></div><div class="clearfix"></div></a>
+            <a href="<?=base_url('otentikasi/logout')?>"><div class="pull-left"><i class="zmdi zmdi-power mr-20"></i>
+            <span class="right-nav-text">Log Out</span></div><div class="clearfix"></div></a>
         </li>
                             
         

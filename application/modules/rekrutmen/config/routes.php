@@ -33,6 +33,7 @@
 $route['otentikasi'] = "rekrutmen/otentikasi";
 $route['otentikasi/login'] = "rekrutmen/otentikasi/login";
 $route['otentikasi/daftar'] = "rekrutmen/otentikasi/daftar";
+$route['otentikasi/logout'] = "rekrutmen/otentikasi/logout";
 
 $route['diri'] = "rekrutmen/diri";
 $route['keluarga'] = "rekrutmen/keluarga";

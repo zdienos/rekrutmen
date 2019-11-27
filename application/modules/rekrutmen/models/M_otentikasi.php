@@ -5,8 +5,15 @@ class M_otentikasi extends CI_Model {
 	function cek_login($email,$pwd) {        
         $this->db->where("email", $email);
         $query = $this->db->get("tb_user");
-        if($query->num_rows()>0){          
-			$hashed_pwd = $query->row('password');
+        if($query->num_rows()>0){
+			foreach ($query->result() as $d) {
+				$sess_data['nama_lengkap'] = $d->nama_lengkap;
+				$sess_data['email'] = $d->email;
+				$sess_data['role'] = $d->role;
+				$sess_data['avatar'] = $d->avatar;
+				$this->session->set_userdata($sess_data);
+				$hashed_pwd = $d->password;				
+			}      			
 			if (password_verify($pwd, $hashed_pwd)) {			
 				return true;
 			}

@@ -77,8 +77,8 @@
 												</div>
 												<div class="form-group">
 													<div class="checkbox checkbox-primary pr-10 pull-left">
-														<input id="checkbox_2" required="" type="checkbox">
-														<label for="checkbox_2"> Saya setuju dengan <span class="txt-primary">semua ketentuan yang ada</span></label>
+														<input id="checkbox" required type="checkbox">
+														<label for="checkbox"> Saya setuju dengan <span class="txt-primary">semua ketentuan yang ada</span></label>
 													</div>
 													<div class="clearfix"></div>
 												</div>
