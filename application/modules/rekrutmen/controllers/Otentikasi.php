@@ -4,7 +4,7 @@ class Otentikasi extends CI_Controller {
 
 	public function __construct(){
 		parent::__construct();
-		$this->load->model('M_otentikasi','otentikasi');		
+		$this->load->model('M_otentikasi','otentikasi');	
 	}
 
 	function index(){ 		
@@ -15,10 +15,10 @@ class Otentikasi extends CI_Controller {
 		// } else {echo 'gagal';
 		// }
 		//$this->session->sess_destroy();
-		if ($this->session->userdata('email')) {
-            redirect('rekrutmen/diri');
-        } else {
-			$this->session->sess_destroy();
+		
+		if (isset($this->session->userdata['email'])) {
+            redirect(base_url('rekrutmen/diri'));
+        } else {			
 			$this->load->view('otentikasi/login');
 			$this->load->view('template/footer_js');
 			$this->load->view('template/footer');
@@ -32,14 +32,16 @@ class Otentikasi extends CI_Controller {
 		$this->form_validation->set_rules('txt_password', 'password', 'required|trim');		
 		if ($this->form_validation->run() == FALSE) {
 			$this->load->view('otentikasi/login');
+			$this->load->view('template/footer_js');
+		 	$this->load->view('template/footer');
 		} 	
 		else {	
 			$email = $this->input->post('txt_email');
         	$password = $this->input->post('txt_password');
 			  
 			$hasil = $this->otentikasi->cek_login($email, $password);
-			if ($hasil) {
-				//die('berhasil')				
+			if ($hasil) {				
+				//die('berhasil');
 				$this->session->set_flashdata('psn_sukses', 'Login Berhasil !');
 				redirect(base_url('diri'));
 			} 
@@ -102,7 +104,7 @@ class Otentikasi extends CI_Controller {
 	}
 		
 
-	function logout(){
+	function logout(){		
 		$this->session->sess_destroy();		
 		redirect(base_url('otentikasi'));
 	}

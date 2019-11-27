@@ -2,14 +2,19 @@
 
 class Diri extends CI_Controller {
 
-	public function __construct()
-	{
+	public function __construct() {
 		parent::__construct();		
-	    $this->load->model('Model_hrd');	    
+		$this->load->model('Model_hrd');	 
+		$this->_cek_login();   
 	}
 
-	public function index()
-	{ 	
+	function _cek_login() {
+		if (!isset($this->session->userdata['email'])) {
+	  	redirect(base_url('otentikasi'));
+	  	}
+	}
+
+	public function index() { 	
 		$data['d_agama'] = $this->Model_hrd->data_p_agama();
 
 		$this->load->view('template/header');

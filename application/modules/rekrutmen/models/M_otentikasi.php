@@ -10,11 +10,11 @@ class M_otentikasi extends CI_Model {
 				$sess_data['nama_lengkap'] = $d->nama_lengkap;
 				$sess_data['email'] = $d->email;
 				$sess_data['role'] = $d->role;
-				$sess_data['avatar'] = $d->avatar;
-				$this->session->set_userdata($sess_data);
+				$sess_data['avatar'] = $d->avatar;				
 				$hashed_pwd = $d->password;				
 			}      			
-			if (password_verify($pwd, $hashed_pwd)) {			
+			if (password_verify($pwd, $hashed_pwd)) {	
+				$this->session->set_userdata($sess_data);		
 				return true;
 			}
         }

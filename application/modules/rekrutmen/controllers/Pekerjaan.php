@@ -6,6 +6,13 @@ class Pekerjaan extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('Model_hrd');
+		$this->_cek_login();   
+	}
+
+	function _cek_login() {
+		if (!isset($this->session->userdata['email'])) {
+	  	redirect(base_url('otentikasi'));
+	  	}
 	}
 
 	public function index()
