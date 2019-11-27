@@ -29,7 +29,12 @@
 
 
 /* Home */
-$route['rekrutmen'] = "rekrutmen/diri";
+//$route['rekrutmen'] = "rekrutmen/diri";
+$route['diri'] = "rekrutmen/diri";
+$route['otentikasi/login'] = "rekrutmen/otentikasi/login";
+//$route['otentikasi'] = "rekrutmen/otentikasi";
+$route['otentikasi'] = "rekrutmen/otentikasi";
+$route['keluarga'] = "rekrutmen/keluarga";
 //$route['rekrutmen/profil'] = "rekrutmen/profil";
 
 // /* Adm_profil */
