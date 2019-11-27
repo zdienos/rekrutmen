@@ -1,5 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+
 /*
 |--------------------------------------------------------------------------
 | Base Site URL
@@ -24,23 +25,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $config['base_url']	= "http://".$_SERVER['HTTP_HOST'].
 str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
-
-$config['fonts_path'] = 'system/fonts/';
-
-$config['nama_aplikasi'] = 'Sistem Informasi Karyawan';
-$config['nama_pendek'] = 'KMG';
-$config['nama_instansi'] = 'KUMALA MOTOR GROUP';
-$config['alamat_instansi'] = 'Jl. A. Mappanyukki No.2 Makassar, Sulawesi Selatan';
-$config['phone'] = 'Phone : +62-411-871408';
-$config['fax']= 'Fax : +411-8111887, 856555 ';
-
-$config['nama_aplikasi_oli'] = 'Sistem Informasi Oli';
-$config['nama_pendek_oli'] = 'KMG OLI';
-$config['nama_instansi_oli'] = 'KUMALA MOTOR GROUP - Divisi Oli';
-/*$config['nama_instansi'] = 'KUMALA MOTOR GROUP';
-$config['alamat_instansi'] = 'Jl. A. Mappanyukki No.2 Makassar, Sulawesi Selatan';
-$config['phone'] = 'Phone : +62-411-871408';
-$config['fax']= 'Fax : +411-8111887, 856555 ';*/
 
 /*
 |--------------------------------------------------------------------------
@@ -69,7 +53,7 @@ $config['index_page'] = '';
 |
 | WARNING: If you set this to 'PATH_INFO', URIs will always be URL-decoded!
 */
-$config['uri_protocol']	= 'AUTO';
+$config['uri_protocol']	= 'REQUEST_URI';
 
 /*
 |--------------------------------------------------------------------------
@@ -175,7 +159,7 @@ $config['composer_autoload'] = FALSE;
 | DO NOT CHANGE THIS UNLESS YOU FULLY UNDERSTAND THE REPERCUSSIONS!!
 |
 */
-$config['permitted_uri_chars'] = 'a-z 0-9~%.:_\-\=';
+$config['permitted_uri_chars'] = 'a-z 0-9~%.:_\-';
 
 /*
 |--------------------------------------------------------------------------
@@ -341,7 +325,7 @@ $config['cache_query_string'] = FALSE;
 | https://codeigniter.com/user_guide/libraries/encryption.html
 |
 */
-$config['encryption_key'] = 'kmg_12345';
+$config['encryption_key'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -396,10 +380,10 @@ $config['encryption_key'] = 'kmg_12345';
 */
 $config['sess_driver'] = 'files';
 $config['sess_cookie_name'] = 'ci_session';
-$config['sess_expiration'] = 0;
+$config['sess_expiration'] = 7200;
 $config['sess_save_path'] = NULL;
 $config['sess_match_ip'] = FALSE;
-$config['sess_time_to_update'] = FALSE;
+$config['sess_time_to_update'] = 300;
 $config['sess_regenerate_destroy'] = FALSE;
 
 /*

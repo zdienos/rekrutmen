@@ -58,7 +58,10 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array('email','database','session','pagination','form_validation','cart','multidatabase','user_agent','image_lib');
+//$autoload['libraries'] = array();
+//$autoload['libraries'] = array('email','database','session','pagination','form_validation','cart','multidatabase','user_agent','image_lib');
+$autoload['libraries'] = array('email','database','session','form_validation');
+
 
 /*
 | -------------------------------------------------------------------
@@ -89,7 +92,10 @@ $autoload['drivers'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
 */
-$autoload['helper'] = array('file','html','url','form','security','date','name','download','captcha','text_helper','tanggal','rupiah','dev_helper','otoritas_menu_helper');
+//$autoload['helper'] = array();
+$autoload['helper'] = array('file','html','url','form','security');
+
+
 
 /*
 | -------------------------------------------------------------------
@@ -132,4 +138,4 @@ $autoload['language'] = array();
 |
 |	$autoload['model'] = array('first_model' => 'first');
 */
-$autoload['model'] = array('model_data','model_akses_menu_honda','model_akses_menu_wuling');
+$autoload['model'] = array();

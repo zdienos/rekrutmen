@@ -49,7 +49,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = "rekrutmen/login";
+$route['default_controller'] = "rekrutmen/otentikasi";
 $route['404_override'] = '';
 $modules_path = APPPATH.'modules/';
 $modules = scandir($modules_path);
