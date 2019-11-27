@@ -44,13 +44,13 @@ class Otentikasi extends CI_Controller {
 		}
 	}
 
-	function daftar() {
-		echo('tess');
-		die('daftar');
+	function daftar() {	
 		$this->form_validation->set_rules('txt_email', 'username', 'required|trim|xss_clean|valid_email');
 		$this->form_validation->set_rules('txt_password', 'password', 'required|trim');		
 		if ($this->form_validation->run() == FALSE) {
-			$this->load->view('otentikasi/login');
+			$this->load->view('otentikasi/daftar');
+			$this->load->view('template/footer_js');
+			$this->load->view('template/footer');
 		} 	
 		else {	
 			$email = $this->input->post('txt_email');

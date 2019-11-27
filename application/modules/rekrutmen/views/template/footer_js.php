@@ -23,6 +23,7 @@
 		<!-- Bootstrap Core JavaScript -->
 		<script src="<?=base_url('assets/bootstrap/dist/js/bootstrap.min.js')?>"></script>
 		<script src="<?=base_url('assets/jasny-bootstrap/dist/js/jasny-bootstrap.min.js')?>"></script>
+		<script src="<?=base_url('assets/bootstrap-validator/dist/validator.min.js')?>"></script>
 
 		<!-- Moment JavaScript -->
 		<!-- <script type="text/javascript" src="< ?=base_url('assets/moment/min/moment-with-locales.min.js')?>"></script> -->

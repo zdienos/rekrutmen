@@ -50,31 +50,35 @@
 								<div class="row">
 									<div class="col-sm-12 col-xs-12">
 										<div class="mb-30">
-											<h3 class="text-center txt-dark mb-10">Daftarsss</h3>
-											<h6 class="text-center nonecase-font txt-grey">x</h6>
+											<h3 class="text-center txt-dark mb-10">Daftar</h3>
+											<h6 class="text-center nonecase-font txt-grey">Silahkan daftar dengan mengisi form berikut</h6>
 										</div>	
-										<div class="form-wrap">
-											<form action="#">
+										<div class="form-wrap">											
+											<form method="post" action="<?= base_url('otentikasi/do_daftar'); ?>" data-toggle="validator" role="form" >
 												<div class="form-group">
-													<label class="control-label mb-10" for="exampleInputName_1">Username</label>
-													<input type="email" class="form-control" required="" id="exampleInputName_1" placeholder="Username">
+													<label class="control-label mb-10" for="namalengkap">Nama Lengkap</label>
+													<input type="text" class="form-control" id="idNamaLengkap" name="txt_namalengkap" placeholder="Nama Lengkap" required data-error="Nama tidak boleh kosong">
+													<div class="help-block with-errors">
 												</div>
 												<div class="form-group">
-													<label class="control-label mb-10" for="exampleInputEmail_2">Email address</label>
-													<input type="email" class="form-control" required="" id="exampleInputEmail_2" placeholder="Enter email">
+													<label class="control-label mb-10" for="email">Alamat email</label>
+													<input type="email" class="form-control" id="idEmail" name="txt_email" placeholder="Masukkan alamat email" required data-error="Penulisan email salah">
+													<div class="help-block with-errors">
 												</div>
 												<div class="form-group">
-													<label class="pull-left control-label mb-10" for="exampleInputpwd_2">Password</label>
-													<input type="password" class="form-control" required="" id="exampleInputpwd_2" placeholder="Enter pwd">
-												</div>
+													<label class="pull-left control-label mb-10" for="password">Password</label>
+													<input type="password" class="form-control" id="idPassword" placeholder="Masukkan password" required data-minlength="6">
+													<div class="help-block">Minimal 6 karakter</div>
+												</div>												
 												<div class="form-group">
-													<label class="pull-left control-label mb-10" for="exampleInputpwd_3">Confirm Password</label>
-													<input type="password" class="form-control" required="" id="exampleInputpwd_3" placeholder="Enter pwd">
+													<label class="pull-left control-label mb-10" for="confpassword">Ulangi Password</label>
+													<input type="password" class="form-control" required="" id="confPassword" placeholder="Ulangi password" data-match="#idPassword" data-match-error="Password harus sama" required>
+													<div class="help-block with-errors">
 												</div>
 												<div class="form-group">
 													<div class="checkbox checkbox-primary pr-10 pull-left">
 														<input id="checkbox_2" required="" type="checkbox">
-														<label for="checkbox_2"> I agree to all <span class="txt-primary">Terms</span></label>
+														<label for="checkbox_2"> Saya setuju dengan <span class="txt-primary">semua ketentuan yang ada</span></label>
 													</div>
 													<div class="clearfix"></div>
 												</div>
@@ -87,29 +91,9 @@
 								</div>
 							</div>
 						</div>
-					</div>
+						</div>
 					<!-- /Row -->	
 				</div>
+				<!--container-fluid-->
 				
-			</div>
-			<!-- /Main Content -->
-		
-		</div>
-		<!-- /#wrapper -->
-		
-		<!-- JavaScript -->
-		
-		<!-- jQuery -->
-		<script src="<?=base_url('assets/jquery/dist/jquery.min.js')?>"></script>
-		
-		<!-- Bootstrap Core JavaScript -->
-		<script src="<?=base_url('assets/bootstrap/dist/js/bootstrap.min.js')?>"></script>
-		<script src="<?=base_url('assets/jasny-bootstrap/dist/js/jasny-bootstrap.min.js')?>"></script>
-		
-		<!-- Slimscroll JavaScript -->
-		<script src="<?=base_url('assets/js/jquery.slimscroll.js')?>"></script>
-		
-		<!-- Init JavaScript -->
-		<script src="<?=base_url('assets/js/init.js')?>"></script>
-	</body>
-</html>
+			
