@@ -17,6 +17,9 @@
 
 		<!-- Footable CSS -->
 		<link href="<?=base_url('assets/FooTable/compiled/footable.bootstrap.min.css')?>" rel="stylesheet" type="text/css"/>
+
+		<!--alerts CSS -->
+		<link href="<?=base_url('assets/sweetalert/dist/sweetalert.css')?>" rel="stylesheet" type="text/css">
 		
 		<!-- vector map CSS -->
 		<link href="<?=base_url('assets/jasny-bootstrap/dist/css/jasny-bootstrap.min.css')?>" rel="stylesheet" type="text/css"/>

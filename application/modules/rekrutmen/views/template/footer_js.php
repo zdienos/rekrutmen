@@ -39,6 +39,9 @@
 		
 		<!-- Slimscroll JavaScript -->
 		<script src="<?=base_url('assets/js/jquery.slimscroll.js')?>"></script>
+
+		<!-- Sweet-Alert  -->
+		<script src="<?=base_url('assets/sweetalert/dist/sweetalert.min.js')?>"></script>
 	
 		<!-- Fancy Dropdown JS -->
 		<script src="<?=base_url('assets/js/dropdown-bootstrap-extended.js')?>"></script>
@@ -52,23 +55,40 @@
 		<!-- Bootstrap Select JavaScript -->
 		<script src="<?=base_url('assets/bootstrap-select/dist/js/bootstrap-select.min.js')?>"></script>
 	
+		<script>
+			<?php
+				if($this->session->flashdata('psn_sukses'))
+				{
+					$pesan = $this->session->flashdata('psn_sukses');				
+					echo 'swal({   
+						title: "Sukses",   
+						type: "success", 
+						text: "'.$pesan.'",
+						confirmButtonColor: "#01c853",   
+						timer: 2000,   
+             			showConfirmButton: false 
+					});';				
+				}
+				?>
+				<?php
+				if($this->session->flashdata('psn_error'))
+				{
+					$pesan = $this->session->flashdata('psn_error');			
+					echo 'swal({   
+						title: "Error",   
+						type: "error", 
+						text: "'.$pesan.'",
+						confirmButtonColor: "#01c853",   
+						timer: 2000,   
+            			showConfirmButton: false 
+					});';				
+				}
+			?>
+		</script>
+
 		<!-- Init JavaScript -->
 		<script src="<?=base_url('assets/js/init.js')?>"></script>
 
-		<!-- <script>
-			$('#datetimepicker1').datetimepicker({
-				useCurrent: false,
-				icons: {
-						time: "fa fa-clock-o",
-						date: "fa fa-calendar",
-						up: "fa fa-arrow-up",
-						down: "fa fa-arrow-down"
-					},
-					format: 'DD/MM/YYYY'
-				}).on('dp.show', function() {
-				if($(this).data("DateTimePicker").date() === null)
-					$(this).data("DateTimePicker").date(moment());					
-			});		
-		
-		</script> -->
+
+
 

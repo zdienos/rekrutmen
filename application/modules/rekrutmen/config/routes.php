@@ -30,11 +30,14 @@
 
 /* Home */
 //$route['rekrutmen'] = "rekrutmen/diri";
-$route['diri'] = "rekrutmen/diri";
-$route['otentikasi/login'] = "rekrutmen/otentikasi/login";
-//$route['otentikasi'] = "rekrutmen/otentikasi";
 $route['otentikasi'] = "rekrutmen/otentikasi";
+$route['otentikasi/login'] = "rekrutmen/otentikasi/login";
+$route['otentikasi/daftar'] = "rekrutmen/otentikasi/daftar";
+
+$route['diri'] = "rekrutmen/diri";
 $route['keluarga'] = "rekrutmen/keluarga";
+//$route['otentikasi'] = "rekrutmen/otentikasi";
+
 //$route['rekrutmen/profil'] = "rekrutmen/profil";
 
 // /* Adm_profil */

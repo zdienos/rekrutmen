@@ -15,7 +15,8 @@
 		<!-- vector map CSS -->
 		<link href="<?=base_url('assets/jasny-bootstrap/dist/css/jasny-bootstrap.min.css')?>" rel="stylesheet" type="text/css"/>
 		
-		
+		<!--alerts CSS -->
+		<link href="<?=base_url('assets/sweetalert/dist/sweetalert.css')?>" rel="stylesheet" type="text/css">
 		
 		<!-- Custom CSS -->
 		<link href="<?=base_url('assets/css/style.css')?>" rel="stylesheet" type="text/css">
@@ -84,27 +85,5 @@
 					</div>
 					<!-- /Row -->	
 				</div>
+				<!--container-fluid-->
 				
-			</div>
-			<!-- /Main Content -->
-		
-		</div>
-		<!-- /#wrapper -->
-		
-		<!-- JavaScript -->
-		
-		<!-- jQuery -->
-		<script src="<?=base_url('assets/jquery/dist/jquery.min.js')?>"></script>
-		
-		<!-- Bootstrap Core JavaScript -->
-		<script src="<?=base_url('assets/bootstrap/dist/js/bootstrap.min.js')?>"></script>
-		<script src="<?=base_url('assets/jasny-bootstrap/dist/js/jasny-bootstrap.min.js')?>"></script>
-		<script src="<?=base_url('assets/bootstrap-validator/dist/validator.min.js')?>"></script>
-		
-		<!-- Slimscroll JavaScript -->
-		<script src="<?=base_url('assets/js/jquery.slimscroll.js')?>"></script>
-		
-		<!-- Init JavaScript -->
-		<script src="<?=base_url('assets/js/init.js')?>"></script>
-	</body>
-</html>
