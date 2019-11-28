@@ -2,26 +2,53 @@
 
 class M_otentikasi extends CI_Model {
 
-	function cek_login($email,$pwd) {        
-        $this->db->where("email", $email);
-        $query = $this->db->get("tb_user");
-        if($query->num_rows()>0){
-			foreach ($query->result() as $d) {
-				$sess_data['nama_lengkap'] = $d->nama_lengkap;
-				$sess_data['email'] = $d->email;
-				$sess_data['role'] = $d->role;
-				$sess_data['avatar'] = $d->avatar;				
-				$hashed_pwd = $d->password;				
-			}      			
-			if (password_verify($pwd, $hashed_pwd)) {	
-				$this->session->set_userdata($sess_data);		
-				return true;
-			}
-        }
-        else {
-          	return false;
-        }
-      }
+	function cek_login($email) {        
+        $this->db->where('email', $email);
+		$query = $this->db->get('tb_user');
+		if($query->num_rows()>0) {		
+			return $query->row_array();
+		} else {
+			return false;
+		}       
+	}
+
+	function cek_email($email) {
+		$this->db->where('email', $email);
+		$query = $this->db->get('tb_user');
+		if($query->num_rows()>0) {		 	
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	function tambah_user($data){
+		$this->db->insert('tb_user', $data);
+        if($this->db->affected_rows() > 0)
+		{
+		 	return true;
+		} else {
+		 	return false;
+		}
+	}
+
+	function aktivasi_user($email, $token) {
+		$this->db->where('email', $email);
+		$this->db->where('token', $token);
+		$query = $this->db->get('tb_user');
+		if($query->num_rows()>0){
+			$this->db->set('active', 1);
+			$this->db->set('token', '');
+            $this->db->where('email', $email);
+			$this->db->update('tb_user');
+			return true;
+		} else {
+			//$this->session->set_flashdata('psn_error', 'Aktivasi gagal!');
+			///redirect('daftar');
+			//die ('gagalll aktivasi');
+			return false;
+		}
+	}
 
 
 }

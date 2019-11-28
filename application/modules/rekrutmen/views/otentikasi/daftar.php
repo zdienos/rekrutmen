@@ -4,16 +4,16 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<title>Kumala Group | Registrasi</title>
-	
-		
+			
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="favicon.ico">
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		
 		<!-- vector map CSS -->
 		<link href="<?=base_url('assets/jasny-bootstrap/dist/css/jasny-bootstrap.min.css')?>" rel="stylesheet" type="text/css"/>
-		
-		
+
+		<!--alerts CSS -->
+		<link href="<?=base_url('assets/sweetalert/dist/sweetalert.css')?>" rel="stylesheet" type="text/css">
 		
 		<!-- Custom CSS -->
 		<link href="<?=base_url('assets/css/style.css')?>" rel="stylesheet" type="text/css">
@@ -54,7 +54,7 @@
 											<h6 class="text-center nonecase-font txt-grey">Silahkan daftar dengan mengisi form berikut</h6>
 										</div>	
 										<div class="form-wrap">											
-											<form method="post" action="<?= base_url('otentikasi/do_daftar'); ?>" data-toggle="validator" role="form" >
+											<form method="post" action="<?= base_url('otentikasi/daftar'); ?>" data-toggle="validator" role="form" >
 												<div class="form-group">
 													<label class="control-label mb-10" for="namalengkap">Nama Lengkap</label>
 													<input type="text" class="form-control" id="idNamaLengkap" name="txt_namalengkap" placeholder="Nama Lengkap" required data-error="Nama tidak boleh kosong">
@@ -67,12 +67,12 @@
 												</div>
 												<div class="form-group">
 													<label class="pull-left control-label mb-10" for="password">Password</label>
-													<input type="password" class="form-control" id="idPassword" placeholder="Masukkan password" required data-minlength="6">
+													<input type="password" class="form-control" id="idPassword" name="txt_password" placeholder="Masukkan password" required data-minlength="6">
 													<div class="help-block">Minimal 6 karakter</div>
 												</div>												
 												<div class="form-group">
 													<label class="pull-left control-label mb-10" for="confpassword">Ulangi Password</label>
-													<input type="password" class="form-control" required="" id="confPassword" placeholder="Ulangi password" data-match="#idPassword" data-match-error="Password harus sama" required>
+													<input type="password" class="form-control" required="" id="confPassword" name="txt_password1" placeholder="Ulangi password" data-match="#idPassword" data-match-error="Password harus sama" required>
 													<div class="help-block with-errors">
 												</div>
 												<div class="form-group">
