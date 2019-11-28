@@ -8,8 +8,8 @@
 		<meta name="author" content="login"/> -->
 		
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="favicon.ico">
-		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="<?=base_url('assets/img/favicon.png')?>">
+		<link rel="icon" href="<?=base_url('assets/img/favicon.png')?>" type="image/x-icon">
 		
 		<!-- vector map CSS -->
 		<link href="<?=base_url('assets/jasny-bootstrap/dist/css/jasny-bootstrap.min.css')?>" rel="stylesheet" type="text/css"/>

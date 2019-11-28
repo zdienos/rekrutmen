@@ -6,8 +6,8 @@
 		<title>Kumala Group | Registrasi</title>
 			
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="favicon.ico">
-		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="<?=base_url('assets/img/favicon.png')?>">
+		<link rel="icon" href="<?=base_url('assets/img/favicon.png')?>" type="image/x-icon">
 		
 		<!-- vector map CSS -->
 		<link href="<?=base_url('assets/jasny-bootstrap/dist/css/jasny-bootstrap.min.css')?>" rel="stylesheet" type="text/css"/>
@@ -33,10 +33,10 @@
 						<span class="brand-text">Kumala Group</span>
 					</a>
 				</div>
-				<!-- <div class="form-group mb-0 pull-right">
-					<span class="inline-block pr-10">Already have an account?</span>
-					<a class="inline-block btn btn-info btn-rounded btn-outline" href="login.html">Sign In</a>
-				</div> -->
+				<div class="form-group mb-0 pull-right">
+					<span class="inline-block pr-10">Sudah punya akun?</span>
+					<a class="inline-block btn btn-info btn-rounded btn-outline" href="<?=base_url('login');?>">Log In</a>
+				</div> 
 				<div class="clearfix"></div>
 			</header>
 			
