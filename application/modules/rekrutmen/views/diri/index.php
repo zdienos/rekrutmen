@@ -38,7 +38,7 @@
 								<div class="form-group">
 									<label class="control-label mb-10 col-sm-2">Nama Lengkap</label>
 									<div class="col-sm-10">
-										<input type="text" class="form-control"  placeholder="Nama Lengkap">
+										<input type="text" class="form-control"  placeholder="Nama Lengkap" required>
 									</div>
 								</div>											
 								<div class="form-group">
@@ -170,7 +170,7 @@
 									</div> -->
 									<div class="form-group mb-0 mt-30"> 
 										<div class="col-sm-offset-2 col-sm-10">
-											<button type="button" class="btn btn-success btn-anim"><i class="ti-save"></i><span class="btn-text">simpan</span></button>
+											<button type="submit" class="btn btn-success btn-anim"><i class="ti-save"></i><span class="btn-text">simpan</span></button>
 										</div>
 									</div>
 									</form>
