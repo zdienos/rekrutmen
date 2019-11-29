@@ -33,26 +33,39 @@
 					</div>
 					<div class="panel-wrapper collapse in">
 						<div class="panel-body">
-							<div class="form-wrap">
-								<form class="form-horizontal">
+							<div class="form-wrap col-sm-offset-2 col-sm-8">								
+								<form class="form-horizontal" id="frmDiri" method="post" action="#" data-toggle="validator" role="form" >
+								<div class="form-group">
+									<label class="control-label mb-10 col-sm-2">ID User</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="txtIDUser" name="txt_iduser" value="<?=$id_user;?>" placeholder="Nama Lengkap">										
+									</div>
+								</div>
 								<div class="form-group">
 									<label class="control-label mb-10 col-sm-2">Nama Lengkap</label>
 									<div class="col-sm-10">
-										<input type="text" class="form-control"  placeholder="Nama Lengkap" required>
+										<input type="text" class="form-control" id="txtNamaLengkap" name="txt_namalengkap" value="<?=$nama_lengkap?>"placeholder="Nama Lengkap" required data-error="Nama lengkap tidak boleh kosong">										
+										<div class="help-block with-errors"></div>
 									</div>
 								</div>											
 								<div class="form-group">
-									<label class="control-label mb-10 col-sm-2 col-xs-12">Tempat Tgl Lahir</label>
-									<div class="col-sm-4 col-xs-6">
-										<input type="text" class="form-control"  placeholder="Tempat lahir">
-									</div>												
-									<div class="col-sm-6 col-xs-6">
+									<label class="control-label mb-10 col-sm-2">Tempat Lahir</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="txtTempatLahir" name="txt_tempatlahir" placeholder="Tempat lahir" required data-error="Tempat lahir tidak boleh kosong">
+										<div class="help-block with-errors"></div>
+									</div>									
+								</div>
+								<div class="form-group">
+									<label class="control-label mb-10 col-sm-2">Tgl Lahir</label>
+									<div class="col-sm-4">
 										<div class='input-group date' id='datetimepicker1'>
 											<span class="input-group-addon">
 												<span class="fa fa-calendar"></span>
 											</span>
-											<input type='text' class="form-control" />
+											<input type='text' class="form-control" id="txtTglLahir" name="txt_tgllahir" placeholder="Tanggal lahir" required data-error="Tanggal lahir tidak boleh kosong">
+											
 										</div>
+										<div class="help-block with-errors"></div>
 									</div>
 								</div>											
 								<div class="form-group">
@@ -60,65 +73,37 @@
 									<div class="col-sm-4 col-xs-6">																					
 										<div class="radio radio-info">
 											<input type="radio" name="radio" id="radio1" value="option1" checked="">
-											<label for="radio">Laki-laki														</label>
+											<label for="radio">Laki-laki</label>
 											<input  type="radio" name="radio" id="radio2" value="option2" checked="">
-											<label style="margin-left:50px" for="radio2">Perempuan
-											</label>
+											<label style="margin-left:50px" for="radio2">Perempuan</label>
 										</div>
-																								
-										<!-- <select class="selectpicker" data-style="form-control btn-default btn-outline">
-												<option selected>Jenis Kelamin</option>
-												<option>Laki-laki</option>
-												<option>Perempuan</option>
-										</select> -->
 									</div>
 								</div>
 								<div class="form-group">
-									<label class="control-label mb-10 col-sm-2">Alamat</label>
+									<label class="control-label mb-10 col-sm-2">Alamat Lengkap</label>
 									<div class="col-sm-10">
-										<input type="text" class="form-control"  placeholder="">
+										<input type="text" class="form-control" id="txtAlamatLengkap" name="txt_alamatlengkap" placeholder="Alamat lengkap" required data-error="Alamat lengkap tidak boleh kosong">
+										<div class="help-block with-errors"></div>
 									</div>
-								</div>
-								<div class="form-group ">
-									<label class="control-label mb-10 col-sm-2">Propinsi</label>
-									<div class="mb-10 col-sm-4">
-										<select class="form-control" >
-											<option>Sulawesi Selatan</option>
-											<option>Sulawesi Barat</option>
-											<option>Sulawesi Utara</option>
-											<option>Sulawesi Tengah</option>
-											<option>Sulawesi Tenggara</option>
-										</select>
-									</div>
-								<!-- </div>
-								<div class="form-group "> -->
-									<label class="control-label mb-10 col-sm-2">Kota</label>
-									<div class="col-sm-4">
-										<select class="form-control" >
-											<option>Makassar</option>
-											<option>Kendari</option>
-											<option>Palu</option>
-											<option>Gorontalo</option>
-											<option>Balikpapan</option>
-										</select>
-									</div>
-								</div>
+								</div>								
 								<div class="form-group">
 									<label class="control-label mb-10 col-sm-2">No Handphone</label>
-									<div class="mb-10 col-sm-4">
-										<input type="text" class="form-control"  placeholder="">
-									</div>
-								<!-- </div>
-								<div class="form-group"> -->
-									<label class="control-label mb-10 col-sm-2">No KTP</label>
 									<div class="col-sm-4">
-										<input type="text" class="form-control"  placeholder="">
+										<input type="text" class="form-control" id="txtNoHandphone" name="txt_nohandphone" placeholder="No handphone" data-error="No handphone tidak boleh kosong">
+										<div class="help-block with-errors"></div>
 									</div>
 								</div>
-								<div class="form-group mt-10 mb-10"> 
+								<div class="form-group">
+									<label class="control-label mb-10 col-sm-2">No KTP</label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" id="txtNoKTP" name="txt_noktp" placeholder="No KTP" required data-error="No KTP tidak boleh kosong">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+								<div class="form-group mb-10"> 
 									<label class="control-label mb-10  col-sm-2">Agama</label>
 									<div class="mb-20 col-sm-4">
-										<select class="form-control" name="cari_agama" id="cari_agama">
+										<select class="form-control" name="opt_agama" id="optAgama" required>
 											<option value="" selected="selected">--Pilih Agama--</option>
 											<?php
 												foreach($d_agama->result() as $dt){
@@ -127,18 +112,13 @@
 												<?php
 												}
 											?>
-										</select>
-										<!-- <select class="form-control" >
-											<option>Islam</option>
-											<option>Katolik</option>
-											<option>Protestan</option>
-											<option>Budha</option>
-											<option>Hindu</option>
-										</select> -->
+										</select>										
 									</div>
-									<label class="control-label mb-10  col-sm-2">Status Pernikahan</label>
+								</div>
+								<div class="form-group mb-10">
+									<label class="control-label mb-10 col-sm-2">Status Pernikahan</label>
 									<div class="col-sm-4">
-										<select class="form-control" >
+										<select class="form-control" name="opt_status" id="optStatus" required>
 											<option>Lajang</option>
 											<option>Menikah</option>
 											<option>Bercerai</option>										
@@ -170,7 +150,7 @@
 									</div> -->
 									<div class="form-group mb-0 mt-30"> 
 										<div class="col-sm-offset-2 col-sm-10">
-											<button type="submit" class="btn btn-success btn-anim"><i class="ti-save"></i><span class="btn-text">simpan</span></button>
+											<button type="submit" onclick="simpan_data()" id="btnSimpan" class="btn btn-success btn-anim"><i class="ti-save"></i><span class="btn-text">simpan</span></button>
 										</div>
 									</div>
 									</form>

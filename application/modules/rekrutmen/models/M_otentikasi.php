@@ -22,11 +22,18 @@ class M_otentikasi extends CI_Model {
 		}
 	}
 	
-	function tambah_user($data){
+	function tambah_user($data) {
 		$this->db->insert('tb_user', $data);
-        if($this->db->affected_rows() > 0)
-		{
-		 	return true;
+		$last_id = $this->db->insert_id();
+        if($this->db->affected_rows() > 0) {
+			$dpelamar = array (
+				'id_user'		=> $last_id,
+				'nama_lengkap'	=> $data['nama_lengkap']
+			);
+			$this->db->insert('tb_pelamar', $dpelamar);
+        	if($this->db->affected_rows() > 0) {
+			 	return true;
+			}
 		} else {
 		 	return false;
 		}

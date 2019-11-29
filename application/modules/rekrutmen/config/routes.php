@@ -43,6 +43,7 @@ $route['logout'] = "rekrutmen/otentikasi/logout";
 $route['email'] = "rekrutmen/otentikasi/email";
 
 $route['diri'] = "rekrutmen/diri";
+$route['diri/simpan_data_diri'] = "rekrutmen/diri/simpan_data_diri";
 $route['keluarga'] = "rekrutmen/keluarga";
 //$route['otentikasi'] = "rekrutmen/otentikasi";
 

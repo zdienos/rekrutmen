@@ -50,7 +50,8 @@ class Otentikasi extends CI_Controller {
 			if ($hasil) {//email terdaftar			 		
 				if (password_verify($password, $hasil['password'])) {//password bener
 					if($hasil['active']==1) {//user aktif
-						//$session_data['nama_lengkap'] = $hasil['nama_lengkap'];;
+						$session_data['nama_lengkap'] = $hasil['nama_lengkap'];;
+						$session_data['id_user'] = $hasil['id_user'];
 						$session_data['email'] = $hasil['email'];
 						$session_data['role'] = $hasil['role'];;
 						$session_data['avatar'] = $hasil['avatar'];;
@@ -113,7 +114,7 @@ class Otentikasi extends CI_Controller {
 			$hasil = $this->otentikasi->tambah_user($data);
             if ($hasil) {
 				$nama_lengkap = $data['nama_lengkap'];
-				$this->kirim_email($email, $nama_lengkap, $token);
+				//$this->kirim_email($email, $nama_lengkap, $token);
 				$this->session->set_flashdata('psn_sukses', 'Pendaftaran berhasil, silahkan cek email Anda');
 				redirect('login');
 			} else {

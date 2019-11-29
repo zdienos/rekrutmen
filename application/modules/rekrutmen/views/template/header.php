@@ -26,6 +26,11 @@
 		
 		<!-- Custom CSS -->
 		<link href="<?=base_url('assets/css/style.css')?>" rel="stylesheet" type="text/css">
+
+		<style rel="stylesheet" type="text/css">
+			.form-group {margin-bottom: 10px;}
+			.help-block {margin-bottom:0px;}
+		</style>
 	</head>
 	
 	<body>
