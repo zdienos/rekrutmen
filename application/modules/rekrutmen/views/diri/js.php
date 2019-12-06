@@ -63,11 +63,14 @@
             data: $('#frmDiri').serialize(),
             dataType: "JSON",
             success: function(data){
-                location.reload();
+                //location.reload();
+                alert(data);
             },
             error: function(jqXHR, textStatus, errorThrown){
                 alert('Error menyimpan data');
-                console.log(jqXHR.responseText)
+                console.log(jqXHR.responseText);
+                console.log(textStatus);
+                console.log(errorThrown);
             }
         });
 
@@ -82,7 +85,7 @@
                         up: "fa fa-arrow-up",
                         down: "fa fa-arrow-down"
                     },
-                    format: 'DD/MM/YYYY'
+                    format: 'YYYY-MM-DD'
             }).on('dp.show', function() {
             if($(this).data("DateTimePicker").date() === null)
                 $(this).data("DateTimePicker").date(moment());

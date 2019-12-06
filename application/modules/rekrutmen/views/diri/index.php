@@ -44,7 +44,7 @@
 								<div class="form-group">
 									<label class="control-label mb-10 col-sm-2">Nama Lengkap</label>
 									<div class="col-sm-10">
-										<input type="text" class="form-control" id="txtNamaLengkap" name="txt_namalengkap" value="<?=$nama_lengkap?>"placeholder="Nama Lengkap" required data-error="Nama lengkap tidak boleh kosong">										
+										<input type="text" class="form-control" id="txtNamaLengkap" name="txt_namalengkap" value="<?=$nama_lengkap?>"placeholder="Nama Lengkap" required data-error="Nama lengkap tidak boleh kosong">	
 										<div class="help-block with-errors"></div>
 									</div>
 								</div>											
@@ -72,9 +72,9 @@
 									<label class="control-label mb-10 col-sm-2 col-xs-12">Jenis Kelamin</label>
 									<div class="col-sm-4 col-xs-6">																					
 										<div class="radio radio-info">
-											<input type="radio" name="radio" id="radio1" value="option1" checked="">
+											<input type="radio" name="opt_jeniskelamin" id="radio1" value="l" checked="">
 											<label for="radio">Laki-laki</label>
-											<input  type="radio" name="radio" id="radio2" value="option2" checked="">
+											<input  type="radio" name="opt_jeniskelamin" id="radio2" value="p" checked="">
 											<label style="margin-left:50px" for="radio2">Perempuan</label>
 										</div>
 									</div>

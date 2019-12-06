@@ -15,6 +15,15 @@ class Diri extends CI_Controller {
 	  	}
 	}
 
+	function tgl_sql($date){
+		$exp = explode('-',$date);
+		if(count($exp) == 3) {
+			$date = $exp[2].'-'.$exp[1].'-'.$exp[0];
+		}
+		return $date;
+	}
+
+
 	function index() { 	
 		$data['id_user'] = $this->session->userdata['id_user'];
 		$data['nama_lengkap'] = $this->session->userdata['nama_lengkap'];
@@ -30,15 +39,23 @@ class Diri extends CI_Controller {
 
 	
 	function simpan_data_diri() {  
-		$id_user = $this->input->post('txt_iduser');
+		$id_user 	 = $this->input->post('txt_iduser');
+		//$v_laki 	 = $this->input->post('opt_lakilaki');
+		//$v_perempuan = $this->input->post('opt_perempuan');
+		//$v_kelamin = '';
+		//if($v_laki=='')
+		$v_tgllahir = tgl_sql($this->input->post('txt_tgllahir'));
+		//echo $v_tgllahir;
+		 
+
 		$field = array(
 			'nama_lengkap'	=> $this->input->post('txt_namalengkap'),
 			'tempat_lahir'	=> $this->input->post('txt_tempatlahir'),
 			'tgl_lahir'  	=> $this->input->post('txt_tgllahir'),
-			'jenis_kelamin'	=> $this->input->post('opt_jeniskelamin'),		
-			'alamat'      	=> $this->input->post('txt_alamat'),
+			'jenis_kelamin'	=> $this->input->post('opt_jeniskelamin'),
+			'alamat'      	=> $this->input->post('txt_alamatlengkap'),
 			'no_handphone'	=> $this->input->post('txt_nohandphone'),
-			'no_ktp'		=> $this->input->post('txt_ktp'),
+			'no_ktp'		=> $this->input->post('txt_noktp'),
 			'id_agama'		=> $this->input->post('opt_agama'),
 			'id_pendidikan'	=> $this->input->post('opt_pendidikan')	,
 			'status'		=> $this->input->post('opt_status')
@@ -46,16 +63,18 @@ class Diri extends CI_Controller {
 			//'email'			=> $this->input->post('txt_email'),
 			//'password'		=> $this->input->post('txt_password'),
 			//'file_foto'    	=> $this->input->post('txt_catatan')
-		);
-		die($field);
-		// $hasil = $this->pelamar->simpan_data_diri($id_user, $field);
-		// if($hasil){
-		// 	$this->session->set_flashdata('psn_sukses','Data telah tersimpan');
-		// 	echo json_encode(array("status" => true));
-		// } else {
-		// //$this->session->set_flashdata('psn_error','Gagal menambah data ');
-		// }
+		);		
+		$hasil = $this->pelamar->simpan_data_diri($id_user, $field);
+		if($hasil){
+			$this->session->set_flashdata('psn_sukses','Data telah tersimpan');
+			echo json_encode(array("status" => true));
+		} else {
+			echo $id_user;
+		//$this->session->set_flashdata('psn_error','Gagal menambah data ');
+		}
 	}
+
+	
 
 
 }
