@@ -25,9 +25,21 @@ class Diri extends CI_Controller {
 
 
 	function index() { 	
-		$data['id_user'] = $this->session->userdata['id_user'];
-		$data['nama_lengkap'] = $this->session->userdata['nama_lengkap'];
-		$data['d_agama'] = $this->Model_hrd->data_p_agama();
+		// $cek 	= $this->session->userdata('logged_in');
+		// $level 	= $this->session->userdata('level');
+		// if(!empty($cek) && $level=='admin_hrd'){
+		// 	$d['judul']		= "Perusahaan";
+		// 	$d['class'] 	= "master";
+		// 	$d['content'] 	= 'perusahaan/view';
+		// 	$d['data']  	= $this->model_perusahaan->all();
+		// 	$this->load->view('home',$d);
+		// }else{
+		// 	redirect('hrd','refresh');
+		// }
+		$id_user = $this->session->userdata['id_user'];
+		$data['id_user']   = $id_user;
+		$data['d_pelamar'] = $this->pelamar->get_data_diri($id_user);
+		$data['d_agama']   = $this->Model_hrd->data_p_agama();
 
 		$this->load->view('template/header');
 		$this->load->view('template/leftside');
@@ -38,20 +50,18 @@ class Diri extends CI_Controller {
 	}
 
 	
-	function simpan_data_diri() {  
+	function simpan_data_diri() { 		
 		$id_user 	 = $this->input->post('txt_iduser');
 		//$v_laki 	 = $this->input->post('opt_lakilaki');
 		//$v_perempuan = $this->input->post('opt_perempuan');
 		//$v_kelamin = '';
 		//if($v_laki=='')
-		$v_tgllahir = tgl_sql($this->input->post('txt_tgllahir'));
-		//echo $v_tgllahir;
-		 
+		
 
 		$field = array(
 			'nama_lengkap'	=> $this->input->post('txt_namalengkap'),
 			'tempat_lahir'	=> $this->input->post('txt_tempatlahir'),
-			'tgl_lahir'  	=> $this->input->post('txt_tgllahir'),
+			'tgl_lahir'  	=> $this->tgl_sql($this->input->post('txt_tgllahir')),
 			'jenis_kelamin'	=> $this->input->post('opt_jeniskelamin'),
 			'alamat'      	=> $this->input->post('txt_alamatlengkap'),
 			'no_handphone'	=> $this->input->post('txt_nohandphone'),
