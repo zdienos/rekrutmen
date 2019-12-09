@@ -23,7 +23,7 @@ class Otentikasi extends CI_Controller {
 		//$this->session->sess_destroy();
 		
 		if (isset($this->session->userdata['email'])) {
-            redirect(base_url('rekrutmen/diri'));
+            redirect(base_url('diri'));
         } else {			
 			$this->load->view('otentikasi/login');
 			$this->load->view('template/footer_js');
@@ -76,7 +76,7 @@ class Otentikasi extends CI_Controller {
 
 	function daftar() {	
 		if (isset($this->session->userdata['email'])) {
-            redirect(base_url('rekrutmen/diri'));
+            redirect(base_url('diri'));
         }
 
         $this->form_validation->set_rules('txt_namalengkap', 'Nama Lengkap', 'required|trim');

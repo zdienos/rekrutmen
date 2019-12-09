@@ -30,12 +30,13 @@
 
 /* Home */
 //$route['rekrutmen'] = "rekrutmen/diri";
-$route['otentikasi'] = "rekrutmen/otentikasi";
-$route['otentikasi/login'] = "rekrutmen/otentikasi/login";
-$route['otentikasi/daftar'] = "rekrutmen/otentikasi/daftar";
-$route['otentikasi/aktivasi'] = "rekrutmen/otentikasi/aktivasi";
-$route['otentikasi/logout'] = "rekrutmen/otentikasi/logout";
-$route['otentikasi/email'] = "rekrutmen/otentikasi/email";
+// $route['otentikasi'] = "rekrutmen/otentikasi";
+// $route['otentikasi/login'] = "rekrutmen/otentikasi/login";
+// $route['otentikasi/daftar'] = "rekrutmen/otentikasi/daftar";
+// $route['otentikasi/aktivasi'] = "rekrutmen/otentikasi/aktivasi";
+// $route['otentikasi/logout'] = "rekrutmen/otentikasi/logout";
+// $route['otentikasi/email'] = "rekrutmen/otentikasi/email";
+
 $route['login'] = "rekrutmen/otentikasi/login";
 $route['daftar'] = "rekrutmen/otentikasi/daftar";
 $route['aktivasi'] = "rekrutmen/otentikasi/aktivasi";
@@ -45,6 +46,9 @@ $route['email'] = "rekrutmen/otentikasi/email";
 $route['diri'] = "rekrutmen/diri";
 $route['diri/simpan_data_diri'] = "rekrutmen/diri/simpan_data_diri";
 $route['keluarga'] = "rekrutmen/keluarga";
+$route['keluarga/simpan_data_keluarga'] = "rekrutmen/keluarga/simpan_data_keluarga";
+$route['keluarga/update_data_keluarga'] = "rekrutmen/keluarga/update_data_keluarga";
+$route['keluarga/hapus_data_keluarga'] = "rekrutmen/keluarga/hapus_data_keluarga";
 //$route['otentikasi'] = "rekrutmen/otentikasi";
 
 //$route['rekrutmen/profil'] = "rekrutmen/profil";

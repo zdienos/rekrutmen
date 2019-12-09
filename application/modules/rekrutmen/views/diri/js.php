@@ -55,6 +55,7 @@
     //             }
     //         // });
     //     };
+    
     function simpan_data() {
         url = '<?php echo base_url('diri/simpan_data_diri')?>';
         $.ajax({
@@ -75,6 +76,7 @@
         });
 
     };
+
     $(document).ready(function(){
         /* Datetimepicker Init*/
         $('#datetimepicker1').datetimepicker({

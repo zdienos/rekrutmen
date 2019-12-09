@@ -5,7 +5,7 @@ class Diri extends CI_Controller {
 	public function __construct() {
 		parent::__construct();		
 		$this->load->model('M_pelamar','pelamar');	
-		$this->load->model('Model_hrd','Model_hrd');
+		$this->load->model('Model_hrd','hrd');
 		$this->_cek_login();   
 	}
 
@@ -39,7 +39,7 @@ class Diri extends CI_Controller {
 		$id_user = $this->session->userdata['id_user'];
 		$data['id_user']   = $id_user;
 		$data['d_pelamar'] = $this->pelamar->get_data_diri($id_user);
-		$data['d_agama']   = $this->Model_hrd->data_p_agama();
+		$data['d_agama']   = $this->hrd->data_p_agama();
 
 		$this->load->view('template/header');
 		$this->load->view('template/leftside');
@@ -51,12 +51,7 @@ class Diri extends CI_Controller {
 
 	
 	function simpan_data_diri() { 		
-		$id_user 	 = $this->input->post('txt_iduser');
-		//$v_laki 	 = $this->input->post('opt_lakilaki');
-		//$v_perempuan = $this->input->post('opt_perempuan');
-		//$v_kelamin = '';
-		//if($v_laki=='')
-		
+		$id_user 	 = $this->input->post('txt_iduser');	
 
 		$field = array(
 			'nama_lengkap'	=> $this->input->post('txt_namalengkap'),
@@ -79,8 +74,8 @@ class Diri extends CI_Controller {
 			$this->session->set_flashdata('psn_sukses','Data telah tersimpan');
 			echo json_encode(array("status" => true));
 		} else {
-			echo $id_user;
-		//$this->session->set_flashdata('psn_error','Gagal menambah data ');
+			//echo $id_user;
+		 	//$this->session->set_flashdata('psn_error','Gagal menambah data ');
 		}
 	}
 

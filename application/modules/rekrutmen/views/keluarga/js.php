@@ -12,12 +12,13 @@
         //header('Content-Type: application/json');
         //echo json_encode($data);
 
-    $(function () {
+    //$(function () {
+    $(document).ready(function() {
         "use strict";
                                 
         /*Editing FooTable*/                
-        var $modal = $('#editor-modal'),
-        $editor = $('#editor'),
+        var $modal = $('#modal-keluarga'),
+        $editor = $('#frmKeluarga'),
         $editorTitle = $('#editor-title'),
         ft = FooTable.init('#footableKeluarga', {
             editing: {
@@ -36,6 +37,7 @@
                 },
                 editRow: function(row){
                     var values = row.val();
+                    $editor.find('#txtIDKeluarga').val(values.txtIDKeluarga);
                     $editor.find('#txtNo').val(values.txtNo);
                     $editor.find('#txtHubungan').val(values.txtHubungan);
                     $editor.find('#txtNama').val(values.txtNama);                    
@@ -52,36 +54,96 @@
                     $modal.modal('show');
                 },
                 deleteRow: function(row){
-                    if (confirm('Are you sure you want to delete the row?')){
-                        row.delete();
-                    }
-                }			
+                    //console.log(row.val().txtIDKeluarga);
+                    //Warning Message
+    
+                        swal({   
+                            title: "Anda yakin?",   
+                            text: "Data yang sudah dihapus tidak bisa dikembalikan!",   
+                            type: "warning",   
+                            showCancelButton: true,   
+                            cancelButtonText: "Batal",   
+                            confirmButtonColor: "#fec107",   
+                            confirmButtonText: "Ya!",   
+                            closeOnConfirm: false 
+                        }, function(){   
+                            row.delete();
+                            var id_keluarga=row.val().txtIDKeluarga;
+                            $.ajax({
+                                type : "POST",
+                                url  : "<?php echo base_url('keluarga/hapus_data_keluarga')?>",
+                                dataType : "JSON",
+                                data : {id_keluarga: id_keluarga},
+                                success: function(data){
+                                    location.reload();
+                                }
+                            });  
+                            swal("Berhasil!", "Data berhasil dihapus.", "success"); 
+                        });
+                        return false;
+    
+                    // if (confirm('Are you sure you want to delete the row?')){
+                    //     row.delete();
+                    //     var id_keluarga=row.val().txtIDKeluarga;
+                    //     $.ajax({
+                    //     type : "POST",
+                    //     url  : "<?php echo base_url('keluarga/hapus_data_keluarga')?>",
+                    //     dataType : "JSON",
+                    //     data : {id_keluarga: id_keluarga},
+                    //     success: function(data){
+                    //         location.reload();
+                    //     }
+                    //     });                        
+                    // }
+                }
             }
         }),
-        uid = 3;
+        uid = 0;
 
         $editor.on('submit', function(e){
             if (this.checkValidity && !this.checkValidity()) return;
             e.preventDefault();
             var row = $modal.data('row'),
-                values = {
+                values = {                    
                     txtNo: $editor.find('#txtNo').val(),
+                    txtIDKeluarga: $editor.find('#txtIDKeluarga').val(),
                     txtHubungan: $editor.find('#txtHubungan').val(),
                     txtNama: $editor.find('#txtNama').val(),
                     txtKelamin: $editor.find('input:radio:checked').val(),
                     txtUsia: $editor.find('#txtUsia').val(),
                     idPendidikan: $editor.find('#optPendidikan').val(),
-                    txtPendidikan: $editor.find('#optPendidikan :selected').text(),// +':'+$editor.find('#optPendidikan :selected').text(),
-                    //startedOn: moment($editor.find('#startedOn').val(), 'YYYY-MM-DD'),
-                    //dob: moment($editor.find('#dob').val(), 'YYYY-MM-DD')
+                    txtPendidikan: $editor.find('#optPendidikan :selected').text()//, +':'+$editor.find('#optPendidikan :selected').text(),                   
                 };
-
-            if (row instanceof FooTable.Row){                
-                row.val(values);
-            } else {
+                       
+            var url = '';
+            if (row instanceof FooTable.Row){ //edit             
+                row.val(values);                
+                url = '<?php echo base_url('keluarga/update_data_keluarga')?>';
+            } else { //tambah
+                url = '<?php echo base_url('keluarga/simpan_data_keluarga')?>'; 
                 values.txtNo = uid++;
-                ft.rows.add(values);
+                ft.rows.add(values); 
             }
+
+            $.ajax({
+                url: url,
+                type: "POST",
+                data: $('#frmKeluarga').serialize(),
+                //dataType: "html",
+                success: function(data){
+                    location.reload();
+                    //alert('data');
+                },
+                error: function(jqXHR, textStatus, errorThrown){
+                    alert('Error menyimpan data');
+                    console.log(data);
+                    //console.log(jqXHR);
+                    //console.log(jqXHR.responseText);
+                    //console.log(textStatus);
+                    //console.log(errorThrown);
+                }
+            });
+                           
             $modal.modal('hide');
         });
     });

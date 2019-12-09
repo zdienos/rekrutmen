@@ -34,12 +34,13 @@
 						<div class="panel-body">
 							<div class="form-wrap col-sm-offset-2 col-sm-8">								
 								<form class="form-horizontal" id="frmDiri" method="post" action="#" data-toggle="validator" role="form" >
-								<div class="form-group">
+								<!-- <div class="form-group">
 									<label class="control-label mb-10 col-sm-2">ID User</label>
 									<div class="col-sm-10">
-										<input type="text" class="form-control" id="txtIDUser" name="txt_iduser" value="<?=$id_user;?>" placeholder="Nama Lengkap">										
+										<input type="hidden" class="form-control" id="txtIDUser" name="txt_iduser" value="<?=$id_user;?>" >	
 									</div>
-								</div>
+								</div> -->
+								<input type="hidden" class="form-control" id="txtIDUser" name="txt_iduser" value="<?=$id_user;?>" >	
 								<div class="form-group">
 									<label class="control-label mb-10 col-sm-2">Nama Lengkap</label>
 									<div class="col-sm-10">
@@ -80,7 +81,7 @@
 											 $perempuan='';
 											 if (trim($d_pelamar->jenis_kelamin=='l')){
 												$lakilaki='checked';$perempuan='';
-											 } else {
+											 } elseif (trim($d_pelamar->jenis_kelamin=='p')) {
 												$lakilaki='';$perempuan='checked';
 											 }	
 											 ?>
