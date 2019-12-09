@@ -29,13 +29,15 @@ class M_pelamar extends CI_Model {
 
 
     //data keluarga
-    function simpan_data_keluarga($field) {          
-        $this->db->insert('tb_keluarga', $field);
-        if($this->db->affected_rows() > 0) {
-            return true;        
-		} else {
-		 	return false;
-		}
+    function simpan_data_keluarga($field) {     
+        if(count(array_filter($field)) != 0) {        
+            $this->db->insert('tb_keluarga', $field);
+            if($this->db->affected_rows() > 0) {
+                return true;        
+            } else {            
+                return false;
+            }
+        }
     }
 
     function get_data_keluarga($id_user) {   
@@ -71,9 +73,25 @@ class M_pelamar extends CI_Model {
             return false;
         }    
     }
-
-
     //end of data keluarga
+
+
+    //data pendidikan
+    function get_data_pendidikan($id_user) {   
+        $this->db->select('pd.id_user,pd.id_pendidikan,pd.nama_sekolah,pd.kota,pd.tahun_lulus,pd.jurusan,pd.nilai_ratarata,p.id_pendidikan');
+        $this->db->from('tb_pendidikan pd');
+        $this->db->join('p_pendidikan p', 'p.id_pendidikan = pd.id_pendidikan');
+        $this->db->where('id_user', $id_user);
+        $query = $this->db->get();
+        if($query->num_rows() > 0){
+            $hasil = $query->result();
+            return $hasil;
+        } else {
+            return false;
+        }        
+    }
+
+    //end of data pendidikan
 
 
 

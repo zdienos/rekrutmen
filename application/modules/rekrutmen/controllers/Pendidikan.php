@@ -5,7 +5,8 @@ class Pendidikan extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model('Model_hrd');
+		$this->load->model('Model_hrd','hrd');
+		$this->load->model('M_pelamar','pelamar');
 		$this->_cek_login();   
 	}
 
@@ -15,9 +16,12 @@ class Pendidikan extends CI_Controller {
 	  	}
 	}
 
-	public function index()
-	{
-		$data['d_pendidikan'] = $this->Model_hrd->data_p_pendidikan();
+	public function index()	{
+		
+		$id_user = $this->session->userdata['id_user'];
+		$data['id_user']   = $id_user;
+		$data['d_pelamar'] = $this->pelamar->get_data_pendidikan($id_user);
+		$data['d_pendidikan'] = $this->hrd->data_p_pendidikan();
 
 		$this->load->view('template/header');
 		$this->load->view('template/leftside');

@@ -53,13 +53,13 @@ class Keluarga extends CI_Controller {
 			'jenis_kelamin'	=> $this->input->post('opt_jeniskelamin'),
             'usia'          => $this->input->post('txt_usia'),
             'id_pendidikan' => $this->input->post('opt_pendidikan')        
-		);
-		
+		);		
 		$hasil = $this->pelamar->simpan_data_keluarga($field);
 		if($hasil){
 			$this->session->set_flashdata('psn_sukses','Data telah tersimpan');
-			echo json_encode(array("status" => true));
+			//echo json_encode(array("status" => true));
 		} else {			
+			//echo json_encode(array("status" => true));
 		 	//$this->session->set_flashdata('psn_error','Gagal menambah data ');
 		}
 	}
@@ -77,9 +77,9 @@ class Keluarga extends CI_Controller {
 		$hasil = $this->pelamar->update_data_keluarga($id_keluarga,$field);
 		if($hasil){
 			$this->session->set_flashdata('psn_sukses','Data telah diupdate');
-			echo json_encode(array("status" => true));
+			//echo json_encode(array("status" => true));
 		} else {
-			echo $hasil;
+			//echo $hasil;
 		}
 	}
 

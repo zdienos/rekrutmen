@@ -49,6 +49,10 @@ $route['keluarga'] = "rekrutmen/keluarga";
 $route['keluarga/simpan_data_keluarga'] = "rekrutmen/keluarga/simpan_data_keluarga";
 $route['keluarga/update_data_keluarga'] = "rekrutmen/keluarga/update_data_keluarga";
 $route['keluarga/hapus_data_keluarga'] = "rekrutmen/keluarga/hapus_data_keluarga";
+$route['pendidikan'] = "rekrutmen/pendidikan";
+$route['pendidikan/simpan_data_pendidikan'] = "rekrutmen/pendidikan/simpan_data_pendidikan";
+$route['pendidikan/update_data_pendidikan'] = "rekrutmen/pendidikan/update_data_pendidikan";
+$route['pendidikan/hapus_data_pendidikan'] = "rekrutmen/pendidikan/hapus_data_pendidikan";
 //$route['otentikasi'] = "rekrutmen/otentikasi";
 
 //$route['rekrutmen/profil'] = "rekrutmen/profil";

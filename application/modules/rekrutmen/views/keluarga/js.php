@@ -45,8 +45,6 @@
                     if (kelamin=="Laki-laki") {$('#radio1').prop('checked',true);$('#radio2').prop('checked',false);}
                      else {$('#radio1').prop('checked',false);$('#radio2').prop('checked',true);}                         
                     $editor.find('#txtUsia').val(values.txtUsia);
-                    //var zz = values.txtPendidikan;  
-                    //alert(zz);
                     $('#optPendidikan').val(values.idPendidikan);  //bisa
 
                     $modal.data('row', row);
@@ -54,47 +52,30 @@
                     $modal.modal('show');
                 },
                 deleteRow: function(row){
-                    //console.log(row.val().txtIDKeluarga);
-                    //Warning Message
-    
-                        swal({   
-                            title: "Anda yakin?",   
-                            text: "Data yang sudah dihapus tidak bisa dikembalikan!",   
-                            type: "warning",   
-                            showCancelButton: true,   
-                            cancelButtonText: "Batal",   
-                            confirmButtonColor: "#fec107",   
-                            confirmButtonText: "Ya!",   
-                            closeOnConfirm: false 
-                        }, function(){   
-                            row.delete();
-                            var id_keluarga=row.val().txtIDKeluarga;
-                            $.ajax({
-                                type : "POST",
-                                url  : "<?php echo base_url('keluarga/hapus_data_keluarga')?>",
-                                dataType : "JSON",
-                                data : {id_keluarga: id_keluarga},
-                                success: function(data){
-                                    location.reload();
-                                }
-                            });  
-                            swal("Berhasil!", "Data berhasil dihapus.", "success"); 
-                        });
-                        return false;
-    
-                    // if (confirm('Are you sure you want to delete the row?')){
-                    //     row.delete();
-                    //     var id_keluarga=row.val().txtIDKeluarga;
-                    //     $.ajax({
-                    //     type : "POST",
-                    //     url  : "<?php echo base_url('keluarga/hapus_data_keluarga')?>",
-                    //     dataType : "JSON",
-                    //     data : {id_keluarga: id_keluarga},
-                    //     success: function(data){
-                    //         location.reload();
-                    //     }
-                    //     });                        
-                    // }
+                    swal({   
+                        title: "Anda yakin?",   
+                        text: "Data yang sudah dihapus tidak bisa dikembalikan!",   
+                        type: "warning",   
+                        showCancelButton: true,   
+                        cancelButtonText: "Batal",   
+                        confirmButtonColor: "#fec107",   
+                        confirmButtonText: "Ya!",   
+                        closeOnConfirm: false 
+                    }, function(){   
+                        row.delete();
+                        var id_keluarga=row.val().txtIDKeluarga;
+                        $.ajax({
+                            type : "POST",
+                            url  : "<?php echo base_url('keluarga/hapus_data_keluarga')?>",
+                            dataType : "JSON",
+                            data : {id_keluarga: id_keluarga},
+                            success: function(data){
+                                location.reload();
+                            }
+                        });  
+                        swal("Berhasil!", "Data berhasil dihapus.", "success"); 
+                    });
+                    return false;                    
                 }
             }
         }),
@@ -129,10 +110,9 @@
                 url: url,
                 type: "POST",
                 data: $('#frmKeluarga').serialize(),
-                //dataType: "html",
+                //dataType: "JSON",
                 success: function(data){
                     location.reload();
-                    //alert('data');
                 },
                 error: function(jqXHR, textStatus, errorThrown){
                     alert('Error menyimpan data');

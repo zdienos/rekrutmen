@@ -148,7 +148,7 @@
 										</div>
 										<div class="modal-footer">
 											<!-- <button type="submit" class="btn btn-success">Simpan</button> -->
-											<button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+											<button type="button" class="btn btn-default btn-anim" data-dismiss="modal"><i class="ti-close"></i><span class="btn-text">batal</span></button>
 											<button type="submit" id="btnSimpan" class="btn btn-success btn-anim"><i class="ti-save"></i><span class="btn-text">simpan</span></button>
 										</div>
 									</form>

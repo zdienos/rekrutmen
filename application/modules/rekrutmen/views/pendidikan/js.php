@@ -16,8 +16,8 @@
         "use strict";
                                 
         /*Editing FooTable*/                
-        var $modal = $('#editor-modal'),
-        $editor = $('#editor'),
+        var $modal = $('#modal-pendidikan'),
+        $editor = $('#frmPendidikan'),
         $editorTitle = $('#editor-title'),
         ft = FooTable.init('#footablePendidikan', {
             editing: {
