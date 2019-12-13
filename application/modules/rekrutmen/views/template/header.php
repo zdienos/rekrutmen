@@ -15,6 +15,8 @@
 		<!-- bootstrap-select CSS -->
 		<link href="<?=base_url('assets/bootstrap-select/dist/css/bootstrap-select.min.css')?>" rel="stylesheet" type="text/css"/>
 
+		<link href="<?=base_url('assets/jquery-toast-plugin/dist/jquery.toast.min.css')?>" rel="stylesheet" type="text/css">
+
 		<!-- Footable CSS -->
 		<link href="<?=base_url('assets/FooTable/compiled/footable.bootstrap.min.css')?>" rel="stylesheet" type="text/css"/>
 
@@ -35,9 +37,9 @@
 	
 	<body>
 		<!--Preloader-->
-		<div class="preloader-it">
+		<!-- <div class="preloader-it">
 			<div class="la-anim-1"></div>
-		</div>
+		</div> -->
 		<!--/Preloader-->
 		
 		<div class="wrapper theme-1-active pimary-color-red">

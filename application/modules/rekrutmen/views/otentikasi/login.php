@@ -56,7 +56,7 @@
 											<h6 class="text-center nonecase-font txt-grey">Silahkan login menggunakan akun yang sudah terdaftar</h6>
 										</div>	
 										<div class="form-wrap">
-											<form method="post" action="<?= base_url('otentikasi/login'); ?>" data-toggle="validator" role="form" >											
+											<form method="post" action="<?= base_url('login'); ?>" data-toggle="validator" role="form" >											
 												<div class="form-group">
 													<label for="inputEmail" class="control-label mb-10">Email</label>
 													<input type="email" class="form-control"  name="txt_email" placeholder="Email" data-error="Format email salah" required value='mail@mail.com'>

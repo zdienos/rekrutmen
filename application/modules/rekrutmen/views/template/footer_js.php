@@ -24,10 +24,11 @@
 		<script src="<?=base_url('assets/bootstrap/dist/js/bootstrap.min.js')?>"></script>
 		<script src="<?=base_url('assets/jasny-bootstrap/dist/js/jasny-bootstrap.min.js')?>"></script>
 		<script src="<?=base_url('assets/bootstrap-validator/dist/validator.min.js')?>"></script>
+		<script src="<?=base_url('assets/jquery-toast-plugin/dist/jquery.toast.min.js')?>"></script>
+
 
 		<!-- Moment JavaScript -->
 		<!-- <script type="text/javascript" src="< ?=base_url('assets/moment/min/moment-with-locales.min.js')?>"></script> -->
-        
         
         <!-- Moment JavaScript -->
 		<script src="<?=base_url('assets/moment/min/moment.min.js')?>"></script>
@@ -58,7 +59,7 @@
 	
 		<script>
 			<?php
-				if($this->session->flashdata('psn_sukses'))
+				if($this->session->flashdata('psn_sukses_'))
 				{
 					$pesan = $this->session->flashdata('psn_sukses');				
 					echo 'swal({   
@@ -72,7 +73,7 @@
 				}
 				?>
 				<?php
-				if($this->session->flashdata('psn_error'))
+				if($this->session->flashdata('psn_error_'))
 				{
 					$pesan = $this->session->flashdata('psn_error');			
 					echo 'swal({   
@@ -80,11 +81,66 @@
 						type: "error", 
 						text: "'.$pesan.'",
 						confirmButtonColor: "#01c853",   
-						timer: 2000,   
+						timer: 2500,   
             			showConfirmButton: false 
 					});';				
 				}
 			?>
+
+			<?php
+			if($this->session->flashdata('psn_sukses'))
+			{
+				$pesan = $this->session->flashdata('psn_sukses');
+				echo 'notifikasi_sukses("'.$pesan.'");';
+			}
+			if($this->session->flashdata('psn_error'))
+			{
+				$pesan = $this->session->flashdata('psn_error');
+				echo 'notifikasi_error("'.$pesan.'");';
+			}
+			?>
+
+		
+				
+
+			function pesan_sukses(pesan){
+				swal({   
+						title: "Sukses",   
+						type: "success", 
+						text: pesan,						
+						timer: 2000,   
+            			showConfirmButton: false 
+					});								
+			}
+
+			function notifikasi_sukses(teks){
+				$.toast().reset('all');
+				$("body").removeAttr('class');
+				$.toast({
+					heading: 'Berhasil',
+					text: teks,
+					position: 'top-right',
+					loaderBg:'#fec107',
+					icon: 'success',
+					hideAfter: 1500, 
+					stack: 6
+				});
+				return false;  
+			}
+
+			function notifikasi_error(teks){
+				$.toast().reset('all');
+				$("body").removeAttr('class');
+				$.toast({
+					heading: 'Terjadi kesalahan',
+					text: teks,
+					position: 'top-right',
+					loaderBg:'#fec107',
+					icon: 'error',
+					hideAfter: 2500
+				});
+				return false;
+			}
 		</script>
 
 		<!-- Init JavaScript -->

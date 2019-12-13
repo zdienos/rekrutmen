@@ -45,6 +45,13 @@ class Keluarga extends CI_Controller {
 		// }
 	}
 
+	public function get_data_keluarga_json() {
+		$id_user = $this->session->userdata['id_user'];
+		$d_keluarga = $this->pelamar->get_data_keluarga($id_user);		
+		header('Content-Type: application/json');
+		echo json_encode($d_keluarga);
+	}
+
 	public function simpan_data_keluarga(){				
 		$field = array(
             'id_user'       => $this->input->post('txt_iduser'),
@@ -56,7 +63,8 @@ class Keluarga extends CI_Controller {
 		);		
 		$hasil = $this->pelamar->simpan_data_keluarga($field);
 		if($hasil){
-			$this->session->set_flashdata('psn_sukses','Data telah tersimpan');
+			// $this->session->set_flashdata('psn_sukses','Data telah tersimpan');
+			//redirect(base_url('keluarga'),'refresh');
 			//echo json_encode(array("status" => true));
 		} else {			
 			//echo json_encode(array("status" => true));
@@ -76,7 +84,7 @@ class Keluarga extends CI_Controller {
 		
 		$hasil = $this->pelamar->update_data_keluarga($id_keluarga,$field);
 		if($hasil){
-			$this->session->set_flashdata('psn_sukses','Data telah diupdate');
+			//$this->session->set_flashdata('psn_sukses','Data telah diupdate');
 			//echo json_encode(array("status" => true));
 		} else {
 			//echo $hasil;
@@ -86,11 +94,7 @@ class Keluarga extends CI_Controller {
 	public function hapus_data_keluarga(){
         $id_keluarga=$this->input->post('id_keluarga');
 		$hasil = $this->pelamar->hapus_data_keluarga($id_keluarga);
-		// if($hasil){
-		// 	$this->session->set_flashdata('psn_sukses','Data telah dihapus');
-		// 	echo json_encode(array("status" => true));
-		// }
-        //echo json_encode($data);
+		$this->session->set_flashdata('psn_sukses','Data telah dihapus');
     }
 
 

@@ -34,7 +34,7 @@
 						<div class="clearfix"></div>
 					</div>
 					<div class="panel-wrapper collapse in">
-						<div class="panel-body">
+						<div class="panel-body">							
 							<div class="table-wrap">								
 								<table id="footableKeluarga" class="table" data-paging="true" data-filtering="false" data-sorting="true" data-editing="true" >
 									<thead>
@@ -68,8 +68,10 @@
 											</tr>
 									<?php	
 											$no=$no+1; 
-									 		}
-										 } ?>																			
+											}
+										 } ?>
+											<input type="text" id="noUrut" name="noUrut" class="hidden" value="<?=$no?>"/>
+										
 									</tbody>
 								</table>
 

@@ -15,12 +15,17 @@
     //$(function () {
     $(document).ready(function() {
         "use strict";
+
+        var no_urut = $('#noUrut').val();
+        //alert(no_urut);
+
+       
                                 
         /*Editing FooTable*/                
         var $modal = $('#modal-keluarga'),
         $editor = $('#frmKeluarga'),
         $editorTitle = $('#editor-title'),
-        ft = FooTable.init('#footableKeluarga', {
+        ft = FooTable.init('#footableKeluarga', {     
             editing: {
                 enabled: true,
                 alwaysShow: true, 
@@ -60,26 +65,29 @@
                         cancelButtonText: "Batal",   
                         confirmButtonColor: "#fec107",   
                         confirmButtonText: "Ya!",   
-                        closeOnConfirm: false 
-                    }, function(){   
-                        row.delete();
-                        var id_keluarga=row.val().txtIDKeluarga;
+                        closeOnConfirm: true 
+                    }, function(){                           
+                        var id_keluarga=row.val().txtIDKeluarga;    
                         $.ajax({
                             type : "POST",
                             url  : "<?php echo base_url('keluarga/hapus_data_keluarga')?>",
                             dataType : "JSON",
                             data : {id_keluarga: id_keluarga},
-                            success: function(data){
-                                location.reload();
+                            success: function(data){                                        
+                                // console.log('cekk');
+                                //row.delete();
+                                //location.reload();
                             }
                         });  
-                        swal("Berhasil!", "Data berhasil dihapus.", "success"); 
+                        //notifikasi_sukses("Data berhasil dihapus");
+                        location.reload();
                     });
                     return false;                    
                 }
             }
         }),
-        uid = 0;
+       
+        uid = no_urut;
 
         $editor.on('submit', function(e){
             if (this.checkValidity && !this.checkValidity()) return;
@@ -110,12 +118,13 @@
                 url: url,
                 type: "POST",
                 data: $('#frmKeluarga').serialize(),
-                //dataType: "JSON",
-                success: function(data){
-                    location.reload();
+                // dataType: "JSON",
+                success: function(data){                                    
+                    notifikasi_sukses("Data berhasil ditambah");
                 },
                 error: function(jqXHR, textStatus, errorThrown){
-                    alert('Error menyimpan data');
+                    //alert('Error menyimpan data');
+                    notifikasi_error("Error menyimpan data");
                     console.log(data);
                     //console.log(jqXHR);
                     //console.log(jqXHR.responseText);
